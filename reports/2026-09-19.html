@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report 2026-09-19 | Morning Momentum Watchlist</title>
+<meta name="description" content="Daily momentum watchlist: bullish and bearish setups, macro regime, prediction markets. Research only.">
+<style>
+:root{--bg:#0b0a08;--panel:#14110b;--ink:#e9dfc8;--dim:#9a8c6b;
+--brass:#c9963c;--brass-hi:#eec25e;--line:#2b2415;--up:#57d977;--dn:#f0564f;
+--blue:#6aa9e8;--mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--mono);margin:0;
+font-size:15px;line-height:1.65;
+background-image:radial-gradient(ellipse 80% 50% at 50% -10%,#1c160b 0%,transparent 60%)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.05;
+background:repeating-linear-gradient(0deg,transparent 0 2px,#000 2px 4px)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 18px 80px}
+.mast{position:relative;overflow:hidden;border:1px solid var(--line);
+border-top:3px double var(--brass);border-bottom:3px double var(--brass);
+margin:26px 0 8px;background:linear-gradient(180deg,#161209,#0b0a08);padding:44px 26px 30px}
+.mast .bg{position:absolute;inset:-40px;pointer-events:none}
+.gear{position:absolute;right:-70px;top:-70px;width:340px;height:340px;opacity:.10;
+animation:spin 90s linear infinite;transform-origin:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+.grid{position:absolute;inset:0;opacity:.5;
+background-image:linear-gradient(#c9963c11 1px,transparent 1px),linear-gradient(90deg,#c9963c11 1px,transparent 1px);
+background-size:44px 44px}
+.mast .fg{position:relative}
+.kicker{color:var(--brass);letter-spacing:.42em;font-size:11px;text-transform:uppercase}
+.mast h1{font-size:clamp(30px,6vw,58px);margin:.25em 0 .1em;letter-spacing:.06em;
+color:var(--ink);text-transform:uppercase;line-height:1.05}
+.mast h1 .b{color:var(--brass-hi)}
+.dateline{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px;font-size:12px}
+.plate-tag{border:1px solid var(--brass);color:var(--brass-hi);padding:4px 12px;
+letter-spacing:.18em;background:#c9963c14}
+.cursor{display:inline-block;width:.6em;height:1.1em;background:var(--brass-hi);
+vertical-align:-2px;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.disclaimer{color:var(--dim);font-size:11px;letter-spacing:.14em;margin-top:16px}
+body{counter-reset:sec}
+section.gen{margin-top:34px}
+.plate{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--brass);
+padding-bottom:8px;margin-bottom:6px}
+.pnum{font-size:12px;color:#0b0a08;background:var(--brass);padding:2px 9px;font-weight:700}
+h2{counter-increment:sec;font-size:20px;letter-spacing:.12em;text-transform:uppercase;margin:0;color:var(--ink)}
+h2::before{content:counter(sec,decimal-leading-zero) " / ";color:var(--brass)}
+section.gen h2::before{content:""}
+h3.ticker{margin:30px 0 4px;padding:10px 14px;background:var(--panel);
+border:1px solid var(--line);border-left:4px solid var(--brass);
+font-size:16px;letter-spacing:.08em;position:relative}
+h3.ticker::after{content:"";position:absolute;right:10px;top:50%;width:7px;height:7px;
+margin-top:-3.5px;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--brass-hi),#6b4d16);
+box-shadow:0 0 0 2px #0b0a08,0 0 0 3px var(--line)}
+h4{color:var(--brass-hi);letter-spacing:.1em;font-size:14px;text-transform:uppercase}
+p.dim,.dim{color:var(--dim);font-size:12.5px}
+.sm{font-size:12px}
+.tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 10px;margin:2px 4px 2px 0;
+border:1px solid var(--brass);color:var(--brass-hi);letter-spacing:.1em;background:#c9963c14}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);background:var(--panel);margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+table.sortable th{cursor:pointer;user-select:none}
+th{background:#1e1810;color:var(--brass-hi);text-transform:uppercase;letter-spacing:.1em;
+font-size:11px;padding:10px 12px;text-align:left;border-bottom:1px solid var(--brass);white-space:nowrap}
+th:hover{color:#fff}th .arr{color:var(--brass)}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:hover td{background:#c9963c0d}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.l{text-align:left}.up{color:var(--up)}.dn{color:var(--dn)}
+.md-table td:nth-child(n+2){text-align:right;font-variant-numeric:tabular-nums}
+ul.dots{list-style:none;padding:0}ul.dots li{padding:7px 0 7px 22px;position:relative;border-bottom:1px dashed #241e12}
+ul.dots li::before{content:"▪";color:var(--brass);position:absolute;left:4px}
+blockquote{border-left:3px solid var(--brass);margin:14px 0;padding:8px 16px;color:var(--dim);background:var(--panel)}
+code{background:#00000088;border:1px solid var(--line);padding:1px 6px;color:var(--brass-hi);font-size:12.5px}
+a{color:var(--blue)}
+strong{color:#fff}
+hr{border:none;border-top:1px solid var(--line);margin:2rem 0}
+.wires{display:flex;flex-direction:column;gap:7px;margin:12px 0}
+.wire{display:grid;grid-template-columns:190px 1fr 76px;gap:12px;align-items:center;
+background:var(--panel);border:1px solid var(--line);padding:8px 12px}
+.wl em{color:var(--dim);font-style:normal;font-size:11px}
+.wbar{height:14px;background:#0a0906;border:1px solid var(--line);position:relative;overflow:hidden}
+.wfill{position:absolute;top:0;bottom:0;left:0}
+.wfill.up{background:linear-gradient(90deg,#1d5c33,var(--up))}
+.wfill.dn{background:linear-gradient(90deg,#7a231f,var(--dn))}
+.wv{text-align:right;font-variant-numeric:tabular-nums}
+.meter{display:inline-block;width:64px;height:9px;background:#0a0906;border:1px solid var(--line);
+margin-right:8px;vertical-align:middle}
+.mfill{display:block;height:100%;background:linear-gradient(90deg,#7a5a1e,var(--brass-hi))}
+.sparkline{width:120px;height:36px;display:block}
+.sparkline.big{width:220px;height:54px;margin:2px 0 10px}
+.tspark{background:var(--panel);border:1px solid var(--line);border-top:none;padding:8px 14px;margin:-4px 0 8px}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.rv.on{opacity:1;transform:none}
+.nav{position:sticky;top:0;z-index:40;background:#0b0a08ee;border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:4px;padding:10px 18px;overflow-x:auto}
+.nav a{color:var(--dim);text-decoration:none;font-size:11px;letter-spacing:.14em;
+padding:6px 12px;border:1px solid transparent;white-space:nowrap}
+.nav a:hover{color:var(--brass-hi);border-color:var(--line)}
+footer{margin-top:50px;border-top:3px double var(--brass);padding-top:18px;color:var(--dim);font-size:12px}
+footer .cols{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:640px){.wire{grid-template-columns:1fr;gap:4px}.wv{text-align:left}}
+</style></head>
+<body>
+<nav class="nav"><div class="wrap"><a href="#telegraph">TELEGRAPH</a><a href="#sectors">SECTORS</a><a href="#desk-bull">BULL DESK</a><a href="#desk-bear">BEAR DESK</a><a href="#archive">ARCHIVE</a></div></nav>
+<div class="wrap">
+<header class="mast">
+ <div class="bg"><div class="grid" data-plx="0.05"></div><svg class="gear" data-plx="0.12" viewBox="0 0 200 200" fill="none" stroke="#c9963c" stroke-width="3"><circle cx="100" cy="100" r="62"/><circle cx="100" cy="100" r="26"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(0 100 100)"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(30 100 100)"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(60 100 100)"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(90 100 100)"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(120 100 100)"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(150 100 100)"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(180 100 100)"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(210 100 100)"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(240 100 100)"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(270 100 100)"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(300 100 100)"/><line x1="100" y1="14" x2="100" y2="34" transform="rotate(330 100 100)"/></svg></div>
+ <div class="fg">
+  <div class="kicker">$ momentum --watchlist --daily</div>
+  <h1>Morning <span class="b">Momentum</span><br>Watchlist</h1>
+  <div class="dateline">
+   <span class="plate-tag">[ SAT 2026-09-19 ]</span>
+   <span class="plate-tag">[ MKT CLOSED ]</span>
+   <span class="cursor"></span>
+  </div>
+  <div class="disclaimer">RESEARCH ONLY — NOT FINANCIAL ADVICE · EST. MMXXVI</div>
+ </div>
+</header>
+<main>
+<section class="gen rv" id="telegraph">
+<div class="plate"><span class="pnum">§</span><h2>Market Telegraph — live snapshot</h2></div>
+<p class="dim">Yahoo Finance · as of 2026-09-19 04:21 UTC · click any column to sort · 52W = position within 52-week range</p>
+<div class="tblwrap"><table class="sortable wide">
+<thead><tr><th>Instrument</th><th>Price</th><th>Day %</th><th>52W pos</th><th>1-mo trace</th></tr></thead>
+<tbody><tr><td class="l">S&amp;P 500</td><td class="n">7,650.50</td><td class="n dn">▼ -0.54%</td><td class="n dim">89%</td><td><svg class="sparkline spark" data-sym="^GSPC" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">Nasdaq 100</td><td class="n">29,644.17</td><td class="n up">▲ +0.52%</td><td class="n dim">86%</td><td><svg class="sparkline spark" data-sym="^NDX" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">Dow</td><td class="n">51,682.64</td><td class="n dn">▼ -3.11%</td><td class="n dim">68%</td><td><svg class="sparkline spark" data-sym="^DJI" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">Russell 2000</td><td class="n">2,860.40</td><td class="n dn">▼ -5.22%</td><td class="n dim">73%</td><td><svg class="sparkline spark" data-sym="^RUT" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">VIX</td><td class="n">14.81</td><td class="n dn">▼ -6.50%</td><td class="n dim">7%</td><td><svg class="sparkline spark" data-sym="^VIX" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">DXY</td><td class="n">100.22</td><td class="n up">▲ +0.57%</td><td class="n dim">75%</td><td><svg class="sparkline spark" data-sym="DX-Y.NYB" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">Gold</td><td class="n">4,415.90</td><td class="n dn">▼ -0.11%</td><td class="n dim">37%</td><td><svg class="sparkline spark" data-sym="GC=F" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">Silver</td><td class="n">66.78</td><td class="n up">▲ +4.45%</td><td class="n dim">30%</td><td><svg class="sparkline spark" data-sym="SI=F" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">WTI</td><td class="n">95.47</td><td class="n up">▲ +12.40%</td><td class="n dim">63%</td><td><svg class="sparkline spark" data-sym="CL=F" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">Brent</td><td class="n">99.29</td><td class="n up">▲ +9.09%</td><td class="n dim">60%</td><td><svg class="sparkline spark" data-sym="BZ=F" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">Nat Gas</td><td class="n">2.90</td><td class="n up">▲ +4.43%</td><td class="n dim">8%</td><td><svg class="sparkline spark" data-sym="NG=F" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">Copper</td><td class="n">6.72</td><td class="n up">▲ +3.59%</td><td class="n dim">96%</td><td><svg class="sparkline spark" data-sym="HG=F" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">Bitcoin</td><td class="n">81,151.04</td><td class="n up">▲ +17.16%</td><td class="n dim">34%</td><td><svg class="sparkline spark" data-sym="BTC-USD" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">Ethereum</td><td class="n">2,623.31</td><td class="n up">▲ +16.52%</td><td class="n dim">34%</td><td><svg class="sparkline spark" data-sym="ETH-USD" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l">10Y Yield</td><td class="n">5.00</td><td class="n up">▲ +6.20%</td><td class="n dim">98%</td><td><svg class="sparkline spark" data-sym="^TNX" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr></tbody></table></div>
+</section>
+<section class="gen rv" id="sectors">
+<div class="plate"><span class="pnum">§</span><h2>Sector Wires — 5-day move</h2></div>
+<p class="dim">Sector SPDRs via Yahoo Finance · bars scaled</p>
+<div class="wires">
+<div class="wire"><span class="wl">Health Care <em>XLV</em></span>
+<span class="wbar"><span class="wfill up" style="width:22%"></span></span>
+<span class="wv up">+1.83%</span></div>
+<div class="wire"><span class="wl">Technology <em>XLK</em></span>
+<span class="wbar"><span class="wfill up" style="width:12%"></span></span>
+<span class="wv up">+1.03%</span></div>
+<div class="wire"><span class="wl">Staples <em>XLP</em></span>
+<span class="wbar"><span class="wfill dn" style="width:8%"></span></span>
+<span class="wv dn">-0.70%</span></div>
+<div class="wire"><span class="wl">Energy <em>XLE</em></span>
+<span class="wbar"><span class="wfill dn" style="width:15%"></span></span>
+<span class="wv dn">-1.27%</span></div>
+<div class="wire"><span class="wl">Industrials <em>XLI</em></span>
+<span class="wbar"><span class="wfill dn" style="width:18%"></span></span>
+<span class="wv dn">-1.52%</span></div>
+<div class="wire"><span class="wl">Comm Services <em>XLC</em></span>
+<span class="wbar"><span class="wfill dn" style="width:19%"></span></span>
+<span class="wv dn">-1.59%</span></div>
+<div class="wire"><span class="wl">Discretionary <em>XLY</em></span>
+<span class="wbar"><span class="wfill dn" style="width:21%"></span></span>
+<span class="wv dn">-1.71%</span></div>
+<div class="wire"><span class="wl">Materials <em>XLB</em></span>
+<span class="wbar"><span class="wfill dn" style="width:23%"></span></span>
+<span class="wv dn">-1.88%</span></div>
+<div class="wire"><span class="wl">Real Estate <em>XLRE</em></span>
+<span class="wbar"><span class="wfill dn" style="width:25%"></span></span>
+<span class="wv dn">-2.05%</span></div>
+<div class="wire"><span class="wl">Financials <em>XLF</em></span>
+<span class="wbar"><span class="wfill dn" style="width:29%"></span></span>
+<span class="wv dn">-2.43%</span></div>
+<div class="wire"><span class="wl">Utilities <em>XLU</em></span>
+<span class="wbar"><span class="wfill dn" style="width:37%"></span></span>
+<span class="wv dn">-3.04%</span></div></div>
+</section><h1>Morning Momentum Watchlist — Saturday, September 19, 2026</h1>
+<p><strong>Closed-market edition · Based on the completed Friday, September 18, 2026 session</strong></p>
+<blockquote><strong>⚠️ Research only — not financial advice.</strong> This report is prepared for research purposes. It is not a recommendation to buy, sell, or hold any security. All figures are Friday, September 18, 2026 final prints (markets are closed on Saturday; premarket/after-hours data is unavailable). Verify before trading.</blockquote>
+<p><strong>Status note:</strong> Markets are <strong>CLOSED</strong> today (Saturday, September 19, 2026). Premarket and after-hours data are unavailable for this edition. All equity prices, sector moves, and market figures below are <strong>Friday, September 18, 2026 final prints</strong>. Scorecard section is <strong>skipped</strong> — this is the first report in the series, so there are no prior picks to grade.</p>
+<hr>
+<h2>1. Macro Overview (Top Regime Dashboard — 30+ Verified Datapoints)</h2>
+<p>All values are Friday, September 18, 2026 final closes unless timestamped otherwise. Sources are public press/search-verified financial reporting.</p>
+<p><strong>US indexes — Friday final prints (AP/Reuters-consistent close coverage, Sep 18–19, 2026):</strong></p>
+<ul class="dots">
+<li>S&amp;P 500: <strong>7,650.50 (+0.17%)</strong> — Friday final close.</li>
+<li>Dow Jones Industrial Average: <strong>51,682.64 (−0.18%)</strong> — Friday final close.</li>
+<li>Nasdaq Composite: <strong>26,522.55 (+0.40%)</strong> — Friday final close.</li>
+<li>Russell 2000: <strong>~2,860.40 (−0.50%)</strong> — Friday final print.</li>
+<li>S&amp;P 500 weekly: <strong>−0.1%</strong> (5 trading days ending Sep 18).</li>
+<li>Dow weekly: <strong>−1.7%</strong> (5 trading days ending Sep 18).</li>
+<li>Nasdaq weekly: <strong>+0.7%</strong> (5 trading days ending Sep 18).</li>
+<li>Russell 2000 weekly: <strong>−1.5%</strong> (5 trading days ending Sep 18).</li>
+<li>S&amp;P 500 finished ~<strong>1.9% below its record close</strong> (reported Sep 18–19). S&amp;P 500 YTD total return through Sep 14: <strong>+12.23%</strong> (mutualfunds.com).</li>
+<li>NYSE breadth (Friday): decliners beat advancers <strong>1.78:1</strong>.</li>
+<li>NYSE new 52-week highs/lows (Friday): <strong>92 / 346</strong>.</li>
+</ul>
+<p><strong>Volatility:</strong></p>
+<ul class="dots">
+<li>VIX: sources conflict (<strong>14.88 / 15.44 / 15.50</strong>) across September 18–19 reporting; an options-curve source printed <strong>15.44 with front-month VIX future 17.92 (contango)</strong>, VIX1D 13.12, VIX9D 13.39, skew 145.70. Treat exact level as approximate.</li>
+</ul>
+<p><strong>Rates / Fed:</strong></p>
+<ul class="dots">
+<li>Fed funds target: <strong>3.75%–4.00%</strong> after a <strong>25 bps hike on September 16, 2026</strong> (unanimous 12-0, Chair Kevin Warsh; first hike since 2023).</li>
+<li>10-year Treasury yield: <strong>~4.995%–5.002%</strong> at Friday close (touched post-2007 highs earlier in the week; Thursday rally took it back under 5.0%).</li>
+<li>2-year Treasury yield: <strong>~4.741%–4.756%</strong> at Friday close.</li>
+<li>2s10s spread: roughly <strong>+25 bps</strong> Friday.</li>
+<li>Next FOMC: <strong>October 27–28, 2026</strong> (decision Wednesday, Oct 28, 2:00 PM ET); December 8–9 after that.</li>
+</ul>
+<p><strong>FX / commodities (Friday closes):</strong></p>
+<ul class="dots">
+<li>DXY: <strong>~100.25–100.47</strong>.</li>
+<li>Gold: reports conflict across timestamps (<strong>$4,325–$4,418/oz</strong>); Sep 16 COMEX Dec print was $4,387.50 (+1.3%) per Reuters.</li>
+<li>WTI crude: <strong>$100.30 (−1.6%)</strong> Friday close — back below $100 intraday after Saudi Arabia moved to restore East-West pipeline capacity.</li>
+<li>Brent: <strong>$103.87 (−0.9%)</strong> Friday.</li>
+<li>Natural gas: <strong>~$2.90/MMBtu (−0.06%)</strong> Friday.</li>
+</ul>
+<p><strong>Crypto (timestamped snapshots):</strong></p>
+<ul class="dots">
+<li>BTC <strong>$77,977.88 (+2.2% 24h, +1.2% 7d)</strong> — Sep 18 09:30 UTC snapshot; later Friday prints near <strong>$80,977 (+5.85%)</strong> as crypto equities ripped.</li>
+<li>ETH <strong>$2,501.53 (+2.4% 24h, +1.4% 7d)</strong> — Sep 18 09:30 UTC snapshot; one later Sep 18 print showed <strong>$2,611.15 (+6.74%)</strong> (conflicting; timestamp mix across sources).</li>
+<li>Crypto Fear &amp; Greed: <strong>44/100 (Fear)</strong> — Sep 18.</li>
+<li>Global crypto market cap: <strong>$2.76T (+1.9% 24h)</strong>, BTC dominance 56.8% (CoinGecko via coingabbar, Sep 18).</li>
+</ul>
+<p><strong>Global indexes (Friday closes):</strong></p>
+<ul class="dots">
+<li>Nikkei 225: <strong>65,018.95 (+1.38%)</strong>.</li>
+<li>Hang Seng: <strong>24,750.78 (+0.60%)</strong>.</li>
+<li>Shanghai Composite: <strong>3,911.87 (+0.94%)</strong>.</li>
+<li>FTSE 100: <strong>10,659.13 (−1.45%)</strong>.</li>
+<li>DAX: <strong>25,304.06 (−1.60%)</strong>.</li>
+<li>CAC 40: <strong>8,065.02 (−1.49%)</strong>.</li>
+</ul>
+<p><strong>Credit / sentiment:</strong></p>
+<ul class="dots">
+<li>HY OAS: <strong>~270 bps</strong> (Sep 10 reference; one dashboard print showed 283 bps with unclear observation date).</li>
+<li>IG OAS: <strong>~78 bps</strong> (Sep 10); <strong>~81 bps</strong> (Sep 3).</li>
+<li>CBOE equity put/call reference: <strong>0.58</strong>.</li>
+<li>CNN Fear &amp; Greed (equities): <strong>33 (Fear)</strong> — Sep 11 weekly print; <strong>26 (Fear)</strong> — Sep 16 print. Rapid deterioration from 65 (Greed) on Aug 14.</li>
+<li>AAII sentiment (Sep 11–14 survey window): bullish <strong>38.0%</strong>, neutral <strong>22.7%</strong>, bearish <strong>39.3%</strong>; bull-bear spread <strong>−1.3 points</strong>.</li>
+</ul>
+<p><strong>Inflation / hard macro:</strong></p>
+<ul class="dots">
+<li>August CPI: <strong>+0.4% MoM, +3.4% YoY</strong> (BLS, released Sep 11). Core CPI: <strong>+0.3% MoM, +2.4% YoY</strong>.</li>
+<li>August nonfarm payrolls: <strong>+162,000</strong>; unemployment rate <strong>4.1%</strong> (BLS, released Sep 4).</li>
+<li>Latest PCE reference: July headline PCE <strong>3.7% YoY</strong> (PCE timestamp for the current vintage unavailable).</li>
+<li>Atlanta Fed GDPNow Q3 2026 nowcast: <strong>5.1% (annualized, Sep 16 update, up from 4.4% on Sep 10)</strong> — hot growth that underpins the hawkish regime; PCE nowcast 4.1%.</li>
+</ul>
+<p><strong>Macro verdict:</strong> Hawkish-hike regime + growth resilience. The Fed is <em>tightening into</em> 5% GDPNow growth with core CPI at 2.4% and headline 3.4%. Equity sentiment is fearful (CNN 26–33), breadth is weak (346 NYSE new lows vs 92 highs), and prediction markets price a high probability of another hike this year. Strategy fit favors: banks, energy, cash-flow-rich quality, short-duration value; de-emphasize speculative/unprofitable duration and levered crypto proxies except as tactical momentum vehicles.</p>
+<hr>
+<h2>2. Sector Landscape</h2>
+<h3 class="ticker">11-Sector 5-Day and 1-Month Rankings</h3>
+<p><strong>5-day (week of Sep 12–18, 2026, ETF returns as reported):</strong></p>
+<div class="tblwrap"><table class="md-table sortable"><thead><tr><th>Rank</th><th>Sector</th><th>5-day</th><th>Source</th></tr></thead><tbody>
+<tr><td>1</td><td>Health Care (XLV)</td><td>+1.56%</td><td>Morningstar</td></tr>
+<tr><td>2</td><td>Technology (XLK)</td><td>+1.03%</td><td>Morningstar / Finnhub</td></tr>
+<tr><td>3–7</td><td>Communication Services, Consumer Staples, Materials, Real Estate, Industrials</td><td><strong>unavailable</strong></td><td>not verifiably reported</td></tr>
+<tr><td>8</td><td>Energy</td><td><strong>unavailable</strong></td><td>not verifiably reported</td></tr>
+<tr><td>9</td><td>Consumer Discretionary</td><td><strong>unavailable</strong></td><td>not verifiably reported</td></tr>
+<tr><td>10</td><td>Financials (XLF)</td><td>−2.29%</td><td>Morningstar</td></tr>
+<tr><td>11</td><td>Utilities (XLU)</td><td>−2.95%</td><td>Morningstar</td></tr>
+</tbody></table></div>
+<p>Note: Finnhub 5-day prints: XLK +1.03%, XLV +1.83% (close to Morningstar's +1.56%; small discrepancy noted). Seeking Alpha table (crawl ~Sep 10, prior week): XLE +0.23%, XLU +0.98%, XLK +1.02%, XLF −2.15%, XLY −2.12%, XLV −3.54%. One source described <strong>7 of 11 sectors as oversold</strong> on Friday.</p>
+<p><strong>1-month (sector SPDR returns, etfaction.com table, ~Sep 8–13 window):</strong></p>
+<div class="tblwrap"><table class="md-table sortable"><thead><tr><th>Rank</th><th>Sector</th><th>1-month</th></tr></thead><tbody>
+<tr><td>1</td><td>Energy (XLE)</td><td>+6.91%</td></tr>
+<tr><td>2</td><td>Communication Services (XLC)</td><td>+1.20%</td></tr>
+<tr><td>3</td><td>Technology (XLK)</td><td>+0.85%</td></tr>
+<tr><td>4</td><td>Financials (XLF)</td><td>−0.95%</td></tr>
+<tr><td>5</td><td>Real Estate (XLRE)</td><td>−1.50%</td></tr>
+<tr><td>6</td><td>Consumer Staples (XLP)</td><td>−1.55%</td></tr>
+<tr><td>7</td><td>Health Care (XLV)</td><td>−1.58%</td></tr>
+<tr><td>8</td><td>Utilities (XLU)</td><td>−2.84%</td></tr>
+<tr><td>9</td><td>Materials (XLB)</td><td>−4.30%</td></tr>
+<tr><td>10</td><td>Consumer Discretionary (XLY)</td><td>−5.27%</td></tr>
+<tr><td>11</td><td>Industrials (XLI)</td><td>−7.18%</td></tr>
+</tbody></table></div>
+<h3 class="ticker">Top-3 Sectors — Best 3 Stocks (5-day)</h3>
+<p><strong>Health Care (+1.56% week):</strong></p>
+<ul class="dots">
+<li><strong>MRNA</strong> — Moderna, Inc. — IBD "in a buy area" (Sep 18); weekly/biotech strength.</li>
+<li><strong>RARE</strong> — Ultragenyx Pharmaceutical Inc. — FDA approved Fayuvi (UX111) for Sanfilippo syndrome, ~2 days ahead of the Sep 19 PDUFA; first-ever treatment + Priority Review Voucher.</li>
+<li><strong>SRRK</strong> — Scholar Rock Holding Corporation — FDA approved ISEMBYLD for spinal muscular atrophy; shares +9.1%; 18 Buy ratings, no Holds/Sells; Truist PT $76, Raymond James $72, Citi $74.</li>
+<li>Also on watch: <strong>IONS</strong> — Ionis Pharmaceuticals — PDUFA Sep 22 for zilganersen (Alexander disease; favorable pivotal data).</li>
+</ul>
+<p><strong>Technology (+1.03% week):</strong></p>
+<ul class="dots">
+<li><strong>SNDK</strong> — Sandisk Corporation — <strong>+10.99% Friday</strong>; #1 WSB mention (187/24h); AI memory-demand rotation.</li>
+<li><strong>MU</strong> — Micron Technology, Inc. — <strong>+3.92% Friday</strong>; #2 WSB mention (186/24h); memory supercycle + AI demand.</li>
+<li><strong>AVGO</strong> — Broadcom Inc. — <strong>+2.97% Friday</strong>; +3.6% in Friday premarket (Everhint); JPMorgan top semi-equipment pick (alongside Lumentum, +6.0% premarket).</li>
+</ul>
+<p><strong>Energy (1-month leader, +6.91% 1-mo; Friday mixed):</strong></p>
+<ul class="dots">
+<li>5-day stock-level data <strong>unavailable</strong> for the report window; WTI closed at $100.30 (−1.6%) and XLE was noted as a laggard on Friday after being the prior week's #1. Do not inherit prior-week winners without fresh verification.</li>
+</ul>
+<h3 class="ticker">Bottom-3 Sectors — Worst 3 Stocks (5-day)</h3>
+<p><strong>Utilities (−2.95% week, worst sector):</strong></p>
+<ul class="dots">
+<li>Worst performer on Friday; bond-proxy pain in a hiking regime. Constituent-level 5-day data <strong>unavailable</strong>; sector remains a defensive-underperformer with one source noting utilities among the only sectors down YTD.</li>
+</ul>
+<p><strong>Financials (−2.29% week):</strong></p>
+<ul class="dots">
+<li><strong>JPM</strong> — JPMorgan Chase &amp; Co. — $349.67, +0.10% Friday, <strong>−1.84% 5-day</strong>; downgraded-to-Ow? No — JPMorgan was the one doing upgrades (Ball, Crown, Tyson). Note BALL/CCK/TSN upgrades were JPMorgan actions, Sep 18.</li>
+<li><strong>WFC</strong> — Wells Fargo &amp; Company — $86.12, −0.89% Friday, <strong>−4.62% 5-day</strong>.</li>
+<li><strong>BAC</strong> — Bank of America Corp. — $57.73, −0.77% Friday, <strong>−7.91% 5-day</strong>.</li>
+<li>Counterpoint: <strong>RF</strong> — Regions Financial Corporation — upgraded to Buy by BofA Sep 18 (regional-bank outperformer).</li>
+</ul>
+<p><strong>Third-lagging sector:</strong> per 1-month ranking, Industrials (−7.18%) and Consumer Discretionary (−5.27%) are the weakest on 1-month, but 5-day stock data <strong>unavailable</strong>.</p>
+<hr>
+<h2>3. Top 10 Bullish Setups (ranked by confluence, ties broken by conviction)</h2>
+<section class="gen rv" id="desk-bull">
+<div class="plate"><span class="pnum">§</span><h2>Bullish list — desk</h2></div>
+<p class="dim">Sortable · brass meter = conviction · click headers to sort</p>
+<div class="tblwrap"><table class="sortable wide">
+<thead><tr><th>Ticker</th><th>Conv /100</th><th>Risk /100</th><th>Confl /10</th><th>Timeframe</th><th>Catalyst</th><th>Price</th><th>Day %</th><th>1-mo</th></tr></thead>
+<tbody><tr><td class="l"><strong>SNDK</strong><br><span class="dim sm">Sandisk Corporation</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>8.5</strong></td><td>Swing 2–10 days</td><td class="sm">AI/memory-demand rotation; Friday volume breakout; Everhint +4.7% premarket cross above $1,700 SuperTrend flip green</td><td class="n">1,791.82</td><td class="n up">+10.21%</td><td><svg class="sparkline spark" data-sym="SNDK" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>MU</strong><br><span class="dim sm">Micron Technology, Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>8.0</strong></td><td>Swing 2–10 days</td><td class="sm">AI memory demand; sector rotation</td><td class="n">1,015.80</td><td class="n up">+7.98%</td><td><svg class="sparkline spark" data-sym="MU" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>RARE</strong><br><span class="dim sm">Ultragenyx Pharmaceutical Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>7.5</strong></td><td>Event/Catalyst (PDUFA window Sep 19)</td><td class="sm">FDA approved Fayuvi (UX111) for Sanfilippo syndrome type A — first-ever treatment; Priority Review Voucher granted</td><td class="n">14.51</td><td class="n dn">-43.08%</td><td><svg class="sparkline spark" data-sym="RARE" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>SRRK</strong><br><span class="dim sm">Scholar Rock Holding Corporation</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>7.5</strong></td><td>Catalyst swing</td><td class="sm">FDA approved ISEMBYLD (apitegromab-mstn) for spinal muscular atrophy — first FDA-approved muscle-targeted option in this population; approval ahead of Sep 30 PDUFA</td><td class="n">46.65</td><td class="n dn">-14.75%</td><td><svg class="sparkline spark" data-sym="SRRK" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>AVGO</strong><br><span class="dim sm">Broadcom Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>7.5</strong></td><td>Swing 1–2 weeks</td><td class="sm">AI infrastructure demand; JPMorgan top semi-equipment pick (with Lumentum); +3.6% Friday premarket per Everhint</td><td class="n">357.61</td><td class="n dn">-5.89%</td><td><svg class="sparkline spark" data-sym="AVGO" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>MSTR</strong><br><span class="dim sm">Strategy (MicroStrategy Inc.)</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>7.0</strong></td><td>Momentum trade, 1–5 days</td><td class="sm">BTC rebound (+5.85% to ~$80,977 late Friday); crypto-equities rip</td><td class="n">153.92</td><td class="n up">+66.36%</td><td><svg class="sparkline spark" data-sym="MSTR" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>MARA</strong><br><span class="dim sm">MARA Holdings, Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>7.0</strong></td><td>Momentum trade, 1–5 days</td><td class="sm">BTC rebound; Bitcoin-miner beta</td><td class="n">13.24</td><td class="n up">+47.77%</td><td><svg class="sparkline spark" data-sym="MARA" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>HOOD</strong><br><span class="dim sm">Robinhood Markets, Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>6.5</strong></td><td>Swing</td><td class="sm">crypto rebound + retail activity</td><td class="n">119.82</td><td class="n up">+30.91%</td><td><svg class="sparkline spark" data-sym="HOOD" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>MRNA</strong><br><span class="dim sm">Moderna, Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>6.5</strong></td><td>Swing</td><td class="sm">healthcare sector leadership (+1.56% week best); IBD "in a buy area" (Sep 18)</td><td class="n">154.04</td><td class="n up">+144.66%</td><td><svg class="sparkline spark" data-sym="MRNA" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>ONON</strong><br><span class="dim sm">On Holding AG</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>6.0</strong></td><td>Event/sentiment swing</td><td class="sm">Kylian Mbappé signed with On; +6.4% premarket (Everhint); WSB sentiment bullish on NKE read-through</td><td class="n">27.26</td><td class="n dn">-12.15%</td><td><svg class="sparkline spark" data-sym="ONON" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr></tbody></table></div>
+</section>
+<p>Levels: only Friday-verified prints are used; where support/resistance is not verifiable it is marked <strong>unavailable</strong> — do not trade on inferred levels.</p>
+<h3 class="ticker">SNDK — Sandisk Corporation</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="SNDK" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Swing 2–10 days</span> <span class="tag">CATALYST: AI/memory-demand rotation; Friday volume breakout; Everhint +4.7% premarket cross above $1,700 SuperTrend flip green</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong> (verified close not captured); Friday move <strong>+10.99%</strong> (strongest large-cap tech momentum print of the session).</li>
+<li>Conviction <strong>8.5/10</strong> · Risk <strong>7.5/10</strong> (high beta, extended) · <strong>Confluence 8.5/10</strong></li>
+<li>Levels: pivot ~$1,700 per Everhint premarket note (unverified in regular-session data); support/resistance <strong>unavailable</strong>.</li>
+<li>Bull scenario: memory supercycle bid + WSB retail momentum (187 mentions, #1) carries into Monday; gamma/flow follows Friday's breakout.</li>
+<li>Bear scenario: profit-taking after +11% day; premarket gap gets faded by macro hawks.</li>
+<li>Sentiment: retail hottest ticker on WSB tracker; social sentiment neutral-to-bullish.</li>
+<li>Positioning: no verified short-interest data — <strong>unavailable</strong>.</li>
+</ul>
+<h3 class="ticker">MU — Micron Technology, Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="MU" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Swing 2–10 days</span> <span class="tag">CATALYST: AI memory demand; sector rotation</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; Friday move <strong>+3.92%</strong>.</li>
+<li>Conviction <strong>8.0/10</strong> · Risk <strong>7.0/10</strong> · <strong>Confluence 8.0/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bull scenario: memory/AI capex cycle; #2 WSB mention (186/24h); follow-through with XLK strength.</li>
+<li>Bear scenario: hawkish Fed caps multiple; SOX mean-reversion.</li>
+<li>Sentiment: strong retail interest; sentiment broadly bullish.</li>
+</ul>
+<h3 class="ticker">RARE — Ultragenyx Pharmaceutical Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="RARE" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Event/Catalyst (PDUFA window Sep 19)</span> <span class="tag">CATALYST: FDA approved Fayuvi (UX111) for Sanfilippo syndrome type A — first-ever treatment; Priority Review Voucher granted</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; approval announced ~Sep 17, two days ahead of the Sep 19 PDUFA date.</li>
+<li>Conviction <strong>8.0/10</strong> · Risk <strong>7.5/10</strong> (biotech binary de-risked; "sell the news" risk) · <strong>Confluence 7.5/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bull scenario: landmark approval + PRV monetization value; UltraCare program ships therapy to Qualified Treatment Centers in 30–60 days; orphan-drug pricing power.</li>
+<li>Bear scenario: classic approval-day fade; commercial ramp questions.</li>
+<li>Sentiment: strongly bullish on biotech catalysts.</li>
+<li>Positioning: <strong>unavailable</strong>.</li>
+</ul>
+<h3 class="ticker">SRRK — Scholar Rock Holding Corporation</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="SRRK" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Catalyst swing</span> <span class="tag">CATALYST: FDA approved ISEMBYLD (apitegromab-mstn) for spinal muscular atrophy — first FDA-approved muscle-targeted option in this population; approval ahead of Sep 30 PDUFA</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> ~$60.45 in premarket following approval (reported +9.1%); 52-week high $61.76, low $27.07.</li>
+<li>Conviction <strong>7.5/10</strong> · Risk <strong>7.0/10</strong> · <strong>Confluence 7.5/10</strong></li>
+<li>Levels: resistance at 52-week high $61.76; support zone ~$55 (prior analyst-anchor area) — levels derived from reported prints, not verified order-flow.</li>
+<li>Bull scenario: 18 Buy ratings, no Holds/Sells; Truist $76, Raymond James $72, Citi $74; $2.2B 2035 revenue projection (RJ); ~$492M cash; two fill-finish facilities support commercial transition.</li>
+<li>Bear scenario: post-approval profit-taking; payer/uptake risk.</li>
+<li>Sentiment: bullish analyst response across the street.</li>
+</ul>
+<h3 class="ticker">AVGO — Broadcom Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="AVGO" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Swing 1–2 weeks</span> <span class="tag">CATALYST: AI infrastructure demand; JPMorgan top semi-equipment pick (with Lumentum); +3.6% Friday premarket per Everhint</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; Friday move <strong>+2.97%</strong>.</li>
+<li>Conviction <strong>7.5/10</strong> · Risk <strong>6.5/10</strong> · <strong>Confluence 7.5/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bull scenario: AI capex durability; institutional (JPM) sponsorship; XLK weekly leader.</li>
+<li>Bear scenario: rate-hike multiple compression on mega-cap semis.</li>
+<li>Sentiment: institutional bullish; retail moderate.</li>
+</ul>
+<h3 class="ticker">MSTR — Strategy (MicroStrategy Inc.)</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="MSTR" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Momentum trade, 1–5 days</span> <span class="tag">CATALYST: BTC rebound (+5.85% to ~$80,977 late Friday); crypto-equities rip</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; Friday move <strong>~+16.4%</strong> (Reuters-style close report; one intraday source showed +11.87% earlier in the session).</li>
+<li>Conviction <strong>7.0/10</strong> · Risk <strong>9.0/10</strong> (extreme beta to BTC; hawkish regime) · <strong>Confluence 7.0/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bull scenario: crypto momentum persists into next week; WSB interest elevated (80 mentions) with bearish sentiment — contrarian fuel.</li>
+<li>Bear scenario: BTC fails at $81k; Fed hawkishness crushes levered BTC proxy.</li>
+<li>Sentiment: mixed — high attention, bearish tilt on WSB = contrarian setup.</li>
+<li>Positioning: short-interest data <strong>unavailable</strong>.</li>
+</ul>
+<h3 class="ticker">MARA — MARA Holdings, Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="MARA" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Momentum trade, 1–5 days</span> <span class="tag">CATALYST: BTC rebound; Bitcoin-miner beta</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> $13.24, <strong>+13.7% Friday</strong>; volume 83.68M vs 46.54M average (80% above average).</li>
+<li>Conviction <strong>7.0/10</strong> · Risk <strong>9.0/10</strong> · <strong>Confluence 7.0/10</strong></li>
+<li>Levels: Friday high area ~$13.24+ as pivot; deeper support/resistance <strong>unavailable</strong>.</li>
+<li>Bull scenario: volume-confirmed breakout with crypto tailwind.</li>
+<li>Bear scenario: miner beta cuts both ways on any BTC fade.</li>
+<li>Sentiment: bullish momentum.</li>
+</ul>
+<h3 class="ticker">HOOD — Robinhood Markets, Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="HOOD" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Swing</span> <span class="tag">CATALYST: crypto rebound + retail activity</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; Friday move <strong>~+9.1%</strong>.</li>
+<li>Conviction <strong>6.5/10</strong> · Risk <strong>7.5/10</strong> · <strong>Confluence 6.5/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bull scenario: crypto-activity leverage; 70 WSB mentions; retail-engagement proxy.</li>
+<li>Bear scenario: high-beta selloff if crypto rolls.</li>
+<li>Sentiment: bullish momentum.</li>
+</ul>
+<h3 class="ticker">MRNA — Moderna, Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="MRNA" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Swing</span> <span class="tag">CATALYST: healthcare sector leadership (+1.56% week best); IBD "in a buy area" (Sep 18)</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>.</li>
+<li>Conviction <strong>6.5/10</strong> · Risk <strong>6.5/10</strong> · <strong>Confluence 6.5/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bull scenario: defensive-growth bid in fearful tape; biotech catalyst spillover (RARE/SRRK/IONS).</li>
+<li>Bear scenario: IBD buy-area failures are common in hawkish regimes.</li>
+<li>Sentiment: neutral-to-bullish.</li>
+</ul>
+<h3 class="ticker">ONON — On Holding AG</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="ONON" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Event/sentiment swing</span> <span class="tag">CATALYST: Kylian Mbappé signed with On; +6.4% premarket (Everhint); WSB sentiment bullish on NKE read-through</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; premarket <strong>+6.4%</strong>.</li>
+<li>Conviction <strong>6.0/10</strong> · Risk <strong>6.5/10</strong> · <strong>Confluence 6.0/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bull scenario: celebrity-athlete catalyst + retail buzz; NKE's loss is ONON's narrative gain.</li>
+<li>Bear scenario: one-day headline pop fades; consumer-discretionary weakness (XLY −5.27% 1-mo).</li>
+<li>Sentiment: bullish social read.</li>
+</ul>
+<hr>
+<h2>4. Top 10 Bearish Setups (ranked by confluence, ties broken by conviction)</h2>
+<section class="gen rv" id="desk-bear">
+<div class="plate"><span class="pnum">§</span><h2>Bearish list — desk</h2></div>
+<p class="dim">Sortable · brass meter = conviction · click headers to sort</p>
+<div class="tblwrap"><table class="sortable wide">
+<thead><tr><th>Ticker</th><th>Conv /100</th><th>Risk /100</th><th>Confl /10</th><th>Timeframe</th><th>Catalyst</th><th>Price</th><th>Day %</th><th>1-mo</th></tr></thead>
+<tbody><tr><td class="l"><strong>XENE</strong><br><span class="dim sm">Xenon Pharmaceuticals Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>8.0</strong></td><td>Event-driven short/fade</td><td class="sm">**−30.7% Friday** — temporarily paused enrollment in depression trials due to reported side effects; Deutsche Bank downgraded Buy → Hold</td><td class="n">39.75</td><td class="n dn">-37.08%</td><td><svg class="sparkline spark" data-sym="XENE" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>IMCC</strong><br><span class="dim sm">IM Cannabis Corp.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>8.0</strong></td><td>Fade/watch-only, extreme risk</td><td class="sm">+143.10% Friday session followed by reported after-hours collapse; LULD pause; convertible/dilution overhang</td><td class="n">4.23</td><td class="n up">+34.29%</td><td><svg class="sparkline spark" data-sym="IMCC" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>NFLX</strong><br><span class="dim sm">Netflix, Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>7.0</strong></td><td>Downgrade-driven short swing</td><td class="sm">Wells Fargo downgrade Equal Weight → Underweight; premarket −2.1%</td><td class="n">71.79</td><td class="n dn">-7.69%</td><td><svg class="sparkline spark" data-sym="NFLX" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>PANW</strong><br><span class="dim sm">Palo Alto Networks, Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>6.5</strong></td><td>Downgrade-driven short swing</td><td class="sm">Bernstein downgrade; −4.2%</td><td class="n">363.58</td><td class="n dn">-2.82%</td><td><svg class="sparkline spark" data-sym="PANW" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>NUE</strong><br><span class="dim sm">Nucor Corporation</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>6.5</strong></td><td>Guidance-driven short</td><td class="sm">Q3 guidance below consensus; **−5.33%** (earlier Friday report)</td><td class="n">248.38</td><td class="n dn">-5.98%</td><td><svg class="sparkline spark" data-sym="NUE" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>NKE</strong><br><span class="dim sm">NIKE, Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>6.0</strong></td><td>Sentiment/event short</td><td class="sm">−2.3% on Kylian Mbappé signing with On (competitive headline loss); consumer-discretionary weakness</td><td class="n">35.51</td><td class="n dn">-11.36%</td><td><svg class="sparkline spark" data-sym="NKE" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>ACN</strong><br><span class="dim sm">Accenture plc</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>6.0</strong></td><td>Downgrade-driven short</td><td class="sm">Guggenheim downgrade Buy → Neutral (Sep 18)</td><td class="n">181.29</td><td class="n up">+4.83%</td><td><svg class="sparkline spark" data-sym="ACN" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>MGA</strong><br><span class="dim sm">Magna International Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>5.5</strong></td><td>Downgrade-driven short</td><td class="sm">BMO downgrade; −3.1%</td><td class="n">63.15</td><td class="n dn">-10.13%</td><td><svg class="sparkline spark" data-sym="MGA" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>FLNC</strong><br><span class="dim sm">Fluence Energy, Inc.</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>5.5</strong></td><td>Downgrade-driven short</td><td class="sm">Jefferies downgrade Buy → Hold (Sep 18)</td><td class="n">7.32</td><td class="n dn">-37.70%</td><td><svg class="sparkline spark" data-sym="FLNC" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr><tr><td class="l"><strong>ORANY</strong><br><span class="dim sm">Orano S.A. (ADR)</span></td><td class="n">—</td><td class="n">—</td><td class="n"><strong>5.0</strong></td><td>Downgrade-driven short</td><td class="sm">Morgan Stanley downgrade (Sep 18); uranium-miner ETFs were Friday laggards (URNJ −5.57%, URNM −4.12%, URA −3.27% per etfaction)</td><td class="n">17.24</td><td class="n dn">-8.15%</td><td><svg class="sparkline spark" data-sym="ORANY" viewBox="0 0 120 36" aria-hidden="true"></svg></td></tr></tbody></table></div>
+</section>
+<h3 class="ticker">XENE — Xenon Pharmaceuticals Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="XENE" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Event-driven short/fade</span> <span class="tag">CATALYST: <strong>−30.7% Friday</strong> — temporarily paused enrollment in depression trials due to reported side effects; Deutsche Bank downgraded Buy → Hold</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; move −30.7%.</li>
+<li>Conviction <strong>8.0/10</strong> · Risk <strong>7.0/10</strong> (biotech bounces can be violent) · <strong>Confluence 8.0/10</strong></li>
+<li>Levels: Friday's crash low area is the reference; support/resistance <strong>unavailable</strong>.</li>
+<li>Bear scenario: trial-pause overhang + analyst downgrade = continued distribution; pipeline derisking event.</li>
+<li>Bull scenario: oversold dead-cat bounce on any clarifying update.</li>
+<li>Sentiment: sharply negative.</li>
+</ul>
+<h3 class="ticker">IMCC — IM Cannabis Corp.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="IMCC" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Fade/watch-only, extreme risk</span> <span class="tag">CATALYST: +143.10% Friday session followed by reported after-hours collapse; LULD pause; convertible/dilution overhang</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday close <strong>$4.23 (+143.10%)</strong>; range $2.97–$8.65; volume 104.58M vs ~671K average; reported after-hours print $3.20 (−24.23%) — Friday post-close observation only.</li>
+<li>Conviction <strong>8.0/10</strong> (as a fade thesis) · Risk <strong>10/10</strong> (halt-prone, extreme volatility) · <strong>Confluence 8.0/10</strong></li>
+<li>Levels: Friday high $8.65 (resistance), Friday low $2.97 (support), close $4.23.</li>
+<li>Bear scenario: dilution overhang (June 9 F-3 covered ~17.27M shares tied to convertibles/warrants); post-parabolic mean reversion; another LULD halt on either side.</li>
+<li>Bull scenario: meme-cohort resurgence; WSB #4 mention (164/24h) shows lingering retail interest.</li>
+<li>Sentiment: speculative mania fading.</li>
+<li><strong>Short-squeeze panel (full metrics):</strong></li>
+<li>Short % of float: <strong>unavailable</strong></li>
+<li>Days to cover: <strong>unavailable</strong></li>
+<li>Borrow cost / availability: <strong>unavailable</strong></li>
+<li>Float: <strong>unavailable</strong> (F-3 tied to ~17.27M shares of convertibles/warrants noted)</li>
+<li>SSR (Short-Sale Rule): <strong>unavailable</strong></li>
+<li>Halts: <strong>LULD pause reported Friday</strong></li>
+<li>Off-exchange %: <strong>unavailable</strong></li>
+<li>FTDs: <strong>unavailable</strong></li>
+<li>FUD scan: speculative cannabis micro-cap with prior losses on record for this user — treat as <strong>watch-only</strong></li>
+<li>Options skew: <strong>unavailable</strong></li>
+<li>Dilution overhang: <strong>yes — convertible/warrant F-3 overhang documented</strong></li>
+</ul>
+<h3 class="ticker">NFLX — Netflix, Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="NFLX" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Downgrade-driven short swing</span> <span class="tag">CATALYST: Wells Fargo downgrade Equal Weight → Underweight; premarket −2.1%</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; premarket −2.1% (reported).</li>
+<li>Conviction <strong>7.0/10</strong> · Risk <strong>6.5/10</strong> · <strong>Confluence 7.0/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bear scenario: major-bank downgrade on valuation/content-cost concerns; XLC 1-month only +1.20% — no sector tailwind.</li>
+<li>Bull scenario: WSB sentiment bullish (138 mentions) — retail dip-buying absorbs; contrarian conflict lowers conviction.</li>
+<li>Sentiment: analyst bearish vs. retail bullish (conflict).</li>
+</ul>
+<h3 class="ticker">PANW — Palo Alto Networks, Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="PANW" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Downgrade-driven short swing</span> <span class="tag">CATALYST: Bernstein downgrade; −4.2%</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; move −4.2%.</li>
+<li>Conviction <strong>6.5/10</strong> · Risk <strong>6.5/10</strong> · <strong>Confluence 6.5/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bear scenario: cybersecurity multiple compression in hiking regime; downgrade follow-through.</li>
+<li>Bull scenario: security-spend durability; dip buyers in XLK strength.</li>
+<li>Sentiment: negative on analyst action.</li>
+</ul>
+<h3 class="ticker">NUE — Nucor Corporation</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="NUE" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Guidance-driven short</span> <span class="tag">CATALYST: Q3 guidance below consensus; <strong>−5.33%</strong> (earlier Friday report)</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; move −5.33%.</li>
+<li>Conviction <strong>6.5/10</strong> · Risk <strong>6.0/10</strong> · <strong>Confluence 6.5/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bear scenario: steel demand/pricing weakness; materials XLB −4.30% 1-month.</li>
+<li>Bull scenario: infrastructure/capex demand floor; oversold bounce.</li>
+<li>Sentiment: negative on guidance.</li>
+</ul>
+<h3 class="ticker">NKE — NIKE, Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="NKE" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Sentiment/event short</span> <span class="tag">CATALYST: −2.3% on Kylian Mbappé signing with On (competitive headline loss); consumer-discretionary weakness</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; move −2.3%.</li>
+<li>Conviction <strong>6.0/10</strong> · Risk <strong>6.0/10</strong> · <strong>Confluence 6.0/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bear scenario: brand-momentum narrative loss; XLY −5.27% 1-month; WSB bullish sentiment (66 mentions, "most bullish") = contrarian fade fuel.</li>
+<li>Bull scenario: dip-buying on an overdone headline reaction.</li>
+<li>Sentiment: retail bullish vs. price bearish (contrarian).</li>
+</ul>
+<h3 class="ticker">ACN — Accenture plc</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="ACN" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Downgrade-driven short</span> <span class="tag">CATALYST: Guggenheim downgrade Buy → Neutral (Sep 18)</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>.</li>
+<li>Conviction <strong>6.0/10</strong> · Risk <strong>5.5/10</strong> · <strong>Confluence 6.0/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bear scenario: IT-services demand concerns in a hiking cycle; downgrade follow-through.</li>
+<li>Bull scenario: limited — no positive catalyst in the window.</li>
+<li>Sentiment: negative on analyst action.</li>
+</ul>
+<h3 class="ticker">MGA — Magna International Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="MGA" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Downgrade-driven short</span> <span class="tag">CATALYST: BMO downgrade; −3.1%</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>; move −3.1%.</li>
+<li>Conviction <strong>5.5/10</strong> · Risk <strong>5.5/10</strong> · <strong>Confluence 5.5/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bear scenario: auto-supplier cyclicality; consumer-discretionary softness.</li>
+<li>Bull scenario: oversold bounce.</li>
+<li>Sentiment: negative on analyst action.</li>
+</ul>
+<h3 class="ticker">FLNC — Fluence Energy, Inc.</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="FLNC" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Downgrade-driven short</span> <span class="tag">CATALYST: Jefferies downgrade Buy → Hold (Sep 18)</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>.</li>
+<li>Conviction <strong>5.5/10</strong> · Risk <strong>6.0/10</strong> · <strong>Confluence 5.5/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bear scenario: energy-storage valuation reset; utilities −2.95% week drag.</li>
+<li>Bull scenario: clean-energy policy support.</li>
+<li>Sentiment: negative on analyst action.</li>
+</ul>
+<h3 class="ticker">ORANY — Orano S.A. (ADR)</h3>
+<div class='tspark'><svg class="sparkline big" data-sym="ORANY" viewBox="0 0 120 36" aria-hidden="true"></svg></div>
+<p><span class="tag">TIMEFRAME: Downgrade-driven short</span> <span class="tag">CATALYST: Morgan Stanley downgrade (Sep 18); uranium-miner ETFs were Friday laggards (URNJ −5.57%, URNM −4.12%, URA −3.27% per etfaction)</span></p>
+<ul class="dots">
+<li><strong>Price:</strong> Friday final print <strong>unavailable</strong>.</li>
+<li>Conviction <strong>5.0/10</strong> · Risk <strong>6.0/10</strong> · <strong>Confluence 5.0/10</strong></li>
+<li>Levels: <strong>unavailable</strong>.</li>
+<li>Bear scenario: uranium complex selloff; downgrade follow-through.</li>
+<li>Bull scenario: nuclear-demand thematic support.</li>
+<li>Sentiment: negative.</li>
+</ul>
+<hr>
+<h2>5. Style Buckets</h2>
+<ul class="dots">
+<li><strong>Growth:</strong> AVGO, MU, SNDK, NFLX (short side), MRNA</li>
+<li><strong>Momentum:</strong> SNDK, MSTR, MARA, HOOD, XENE (short side), IMCC (fade)</li>
+<li><strong>Income (incl. options-income angles):</strong> In a 5% 10-year regime, cash-secured-put/covered-call overwriting on quality large caps (JPM, XLE components) is favored; no specific options-income tickers carry fresh catalysts this week — <strong>no new income setups verified</strong>.</li>
+<li><strong>Short squeeze (full panel shown for IMCC above; panels for others below):</strong></li>
+<li>MSTR: short % float <strong>unavailable</strong>; days to cover <strong>unavailable</strong>; borrow <strong>unavailable</strong>; float <strong>unavailable</strong>; SSR <strong>unavailable</strong>; halts none reported; off-exchange % <strong>unavailable</strong>; FTDs <strong>unavailable</strong>; options skew <strong>unavailable</strong>; dilution overhang: periodic ATM equity raises are the known structural overhang (standing context, not re-verified this session).</li>
+<li>MARA: all squeeze metrics <strong>unavailable</strong> except volume 80% above average Friday.</li>
+<li>SNDK/MU/HOOD: squeeze metrics <strong>unavailable</strong>.</li>
+<li><strong>Squeeze takeaway:</strong> the only verified squeeze-type action is IMCC's LULD-halted parabolic session; no borrow/FTD data was publicly verifiable this session.</li>
+</ul>
+<hr>
+<h2>6. Overnight / Pre-Post Movers (Friday session)</h2>
+<ul class="dots">
+<li><strong>Gainers:</strong> SNDK +10.99%, HOOD ~+9.1%, COIN (crypto-linked; +9.1% to +16.4% group per Reuters-style report), MSTR ~+16.4%, MARA +13.7% ($13.24, 83.68M vs 46.54M avg), IMCC +143.10% (close $4.23).</li>
+<li><strong>Losers:</strong> XENE −30.7%, NUE −5.33%, PANW −4.2%, MGA −3.1%, NKE −2.3%.</li>
+<li><strong>Premarket notes (Friday AM, Everhint):</strong> SNDK +4.7% crossing $1,700 with SuperTrend flip green; Lumentum +6.0%; AVGO +3.6%; ONON +6.4% (Mbappé); PANW −4.2% (Bernstein downgrade).</li>
+<li>Premarket/after-hours for the coming Monday session are <strong>unavailable</strong> (markets closed; no live feed this edition).</li>
+</ul>
+<hr>
+<h2>7. Prediction Markets (Polymarket / Kalshi)</h2>
+<p>As of Sep 17–18, 2026 (probabilities move intraday; 24h change unavailable in public reporting):</p>
+<div class="tblwrap"><table class="md-table sortable"><thead><tr><th>#</th><th>Question</th><th>Polymarket</th><th>Kalshi</th><th>Source / timestamp</th></tr></thead><tbody>
+<tr><td>1</td><td>Fed hikes 25 bps at <strong>Oct 28</strong> meeting</td><td>~51%</td><td>~47%</td><td>coingabbar/Polymarket news, Sep 18; APIs Sep 17 07:42 UTC had ~45%/47%</td></tr>
+<tr><td>2</td><td>Fed hikes at <strong>Dec 9</strong> meeting</td><td>~70%</td><td>~72%</td><td>Polymarket/Kalshi APIs, Sep 17 07:42 UTC</td></tr>
+<tr><td>3</td><td>Another 2026 hike (any remaining meeting)</td><td>~81–84%</td><td>—</td><td>Polymarket, Sep 17–18</td></tr>
+<tr><td>4</td><td>3+ total 2026 hikes</td><td>16%</td><td>—</td><td>Polymarket hike-count market, Sep 17</td></tr>
+<tr><td>5</td><td>Fed funds futures-implied Oct hike</td><td>~50%</td><td>—</td><td>CBOT settlements calc, Sep 16</td></tr>
+<tr><td>6</td><td>Fed funds futures-implied Dec hike</td><td>~79%</td><td>—</td><td>CBOT settlements calc, Sep 16</td></tr>
+<tr><td>7</td><td>Per-meeting contracts imply hikes at <strong>both</strong> Oct and Dec</td><td>34%</td><td>—</td><td>Polymarket, Sep 17</td></tr>
+<tr><td>8</td><td>WSJ: at least one more hike by year-end</td><td>~90%</td><td>—</td><td>WSJ reporting, Sep 18 (odds framing, not a market)</td></tr>
+</tbody></table></div>
+<p>Top-20 financial/economic question coverage: only the above Fed-path markets were publicly verifiable this session; remaining question slots (recession odds, CPI prints, GDP, election/political markets) are <strong>unavailable</strong> — Polymarket's full board was not accessible for scraping in this run. Conviction scoring implication: prediction markets lean hawkish — supportive of banks/energy longs and bearish for long-duration growth.</p>
+<hr>
+<h2>8. Calendar</h2>
+<h3 class="ticker">Economic calendar (ranked by importance)</h3>
+<p><strong>Week of Sep 21–25, 2026 (Econoday/Fidelity; times ET):</strong></p>
+<ul class="dots">
+<li><strong>Thu Sep 24, 8:30 AM — Jobless claims</strong> (labor-market read in hiking regime).</li>
+<li><strong>Fri Sep 25, 8:30 AM — Durable goods orders</strong> + <strong>10:00 AM — Consumer sentiment (Michigan)</strong>.</li>
+<li><strong>Wed Sep 23, 9:45 AM — S&amp;P Global flash Manufacturing/Services/Composite PMIs</strong> (+ Richmond Fed data).</li>
+<li><strong>Thu Sep 24, 10:00 AM — New home sales</strong> (+ EIA natural gas report 10:30 AM; mortgage rates &gt;7% per MBS survey).</li>
+<li><strong>Mon Sep 21 — Chicago Fed National Activity Index (8:30 AM)</strong> + Fed speaker Goolsbee (6:30 AM); Treasury bill auctions.</li>
+<li><strong>Fed speakers all week:</strong> Williams, Jefferson, Barkin (Tue); Bowman, Bostic, Barr (Wed); Williams, Hammack, Paulson (Thu); Hammack (Fri). Any hawkish/dovish deviation from Warsh's Sep 16 message moves rates pricing.</li>
+<li>Treasury note auctions: 2-yr (Tue), 5-yr (Wed), 7-yr (Thu).</li>
+<li>No CPI/PCE/jobs this week — next hard inflation read is the September CPI in October.</li>
+</ul>
+<h3 class="ticker">Earnings (week of Sep 21–25)</h3>
+<ul class="dots">
+<li><strong>Mon 9/21 AM:</strong> USAU</li>
+<li><strong>Tue 9/22 AM:</strong> THO · <strong>PM:</strong> WOR</li>
+<li><strong>Wed 9/23 AM:</strong> PAYX · <strong>PM:</strong> SFIX</li>
+<li><strong>Thu 9/24 AM:</strong> SNX, WALD · <strong>PM:</strong> SCHL</li>
+<li>Light week overall; European: Abivax (9/21 close), Kingfisher/Smiths (9/22), JD Sports (9/23), H&amp;M (9/24).</li>
+</ul>
+<h3 class="ticker">Analyst changes (Sep 18, 2026)</h3>
+<p><strong>Upgrades:</strong> BALL (JPM Neutral→Overweight, PT $65), BMI (Northcoast Neutral→Buy, PT $148), CCK (JPM Neutral→Overweight, PT $121), DT (Needham Hold→Buy, PT $68), EQNR (BofA Neutral→Buy, PT $49), ETSY (BTIG Neutral→Buy, PT $90), KALU, LUV, RF (BofA), TSN (JPM Neutral→Overweight), TRGP (TD Cowen Hold→Buy), TSEM (Barclays initiated Overweight), WCN (UBS Neutral→Buy), YETI (Stifel), STUB (Citi).</p>
+<p><strong>Downgrades:</strong> NFLX (Wells Fargo EW→Underweight), PANW (Bernstein), ACN (Guggenheim Buy→Neutral), MGA (BMO), XENE (Deutsche Buy→Hold), FLNC (Jefferies Buy→Hold), ORANY (Morgan Stanley).</p>
+<h3 class="ticker">FDA / regulatory</h3>
+<ul class="dots">
+<li><strong>RARE</strong> — Fayuvi (UX111) <strong>APPROVED</strong> for Sanfilippo syndrome (announced ~Sep 17, ahead of Sep 19 PDUFA).</li>
+<li><strong>IONS</strong> — zilganersen PDUFA <strong>Sep 22</strong> (Alexander disease; positive pivotal data).</li>
+<li><strong>MRK</strong> — Winrevair (sotatercept) label update target <strong>Sep 21</strong>.</li>
+<li><strong>Incyte/Mirum</strong> — zilurgisertib target <strong>Sep 26</strong>.</li>
+<li><strong>Novo Nordisk</strong> — Mim8 (denecimig) target <strong>Sep 30</strong> (unconfirmed).</li>
+<li><strong>SRRK</strong> — ISEMBYLD <strong>APPROVED</strong> (ahead of Sep 30 PDUFA; +9.1%).</li>
+</ul>
+<h3 class="ticker">Geopolitics / disasters / cyber radar</h3>
+<ul class="dots">
+<li>UN General Assembly convenes (week of Sep 21) — headline risk on tariffs/trade.</li>
+<li>FXStreet's week-ahead framing flagged Trump–Xi, oil, tariffs, and global PMIs as the macro watch items.</li>
+<li>Middle East conflict headlines continued through the week (per market commentary) — supports energy bid and gold.</li>
+<li>Saudi Arabia moved to restore half of East-West pipeline capacity — bearish for oil near-term (WTI broke below $100 intraday Thursday).</li>
+<li>No major new cyberattack or natural-disaster market catalyst verified this session.</li>
+</ul>
+<hr>
+<h2>9. Alt-Data &amp; Positioning</h2>
+<ul class="dots">
+<li><strong>WSB (AltIndex, Sep 18, 5:15 PM PST, 24h mentions):</strong> SNDK 187, MU 186, GOOG 172, IMCC 164, NFLX 138, META 130, NVDA 117, MSTR 80 (bearish), INTC 76, SPCX 75 (bullish), TSLA 73, AMD 71, HOOD 70, WEN 69 (bearish), NKE 66 (bullish), GOOGL 62, QUAD 58 (bearish), AAPL 42 (bullish), NBIS 42 (bullish), BRK.B 41 (bullish). Most bullish: NKE. Most bearish: QUAD.</li>
+<li><strong>Insider Form 4 / 13F / congressional trading:</strong> no fresh verifiable filings surfaced this session — <strong>unavailable</strong>.</li>
+<li><strong>Options flow:</strong> CBOE equity put/call 0.58; VIX skew 145.70 (Sep 18 options-curve source); proprietary flow feeds unavailable by design.</li>
+<li><strong>Volume profile:</strong> MARA 80% above average; IMCC 156x average; AMC Sep 18 volume 67.6M vs 62.9M average (standing reference; no confirmed whale purchase).</li>
+<li><strong>Consumer sentiment:</strong> Michigan survey due Fri Sep 25; no fresh print this session.</li>
+</ul>
+<hr>
+<h2>10. Strategy-Regime Fit (ranked)</h2>
+<ul class="dots">
+<li><strong>Energy longs</strong> — 1-month sector leader; $100 oil; pipeline headlines; hawkish-inflation hedge. (XLE)</li>
+<li><strong>Bank/financial quality</strong> — steepening 2s10s (+25 bps), rising NIM narrative; prefer regionals with upgrades (RF) over money-centers after BAC's −7.9% week.</li>
+<li><strong>Cash-flow mega-cap tech (selective)</strong> — only with AI-capex proof (AVGO, MU, SNDK); avoid unprofitable duration.</li>
+<li><strong>Healthcare catalyst trades</strong> — best 5-day sector; FDA approvals de-risked (RARE, SRRK); PDUFA watch (IONS 9/22).</li>
+<li><strong>Options income</strong> — 5% 10Y + elevated vol supports premium selling on quality names.</li>
+<li><strong>Tactical crypto-equity momentum</strong> — MSTR/MARA/HOOD as vehicles, sized small; regime is hostile (hawkish) so treat as trades, not holdings.</li>
+<li><strong>Short: downgrade/guidance-driven single names</strong> — XENE, NUE, PANW, NFLX, ACN.</li>
+<li><strong>Avoid: long-duration unprofitable growth, rate-sensitive utilities/REITs, parabolic micro-caps (IMCC watch-only).</strong></li>
+</ul>
+<hr>
+<h2>11. Concentration Check</h2>
+<ul class="dots">
+<li>Mag-7/AI-hardware concentration remains the market's hinge: Nasdaq +0.7% on the week vs. Dow −1.7% shows narrow leadership. Any AI-capex wobble (NVDA −3.4% on Sep 14 was a preview) hits the index disproportionately.</li>
+<li>Memory (SNDK/MU) is now a crowded retail long (top-2 WSB mentions) — chase risk is elevated.</li>
+<li>Crypto-proxy crowding: MSTR/MARA/HOOD/COIN all ripped the same day on the same BTC impulse — correlated long book.</li>
+<li>Bearish crowding: bearish AAII tilt + 346 NYSE new lows vs 92 highs + 7/11 sectors oversold = consensus is already fearful; contrarian bounce risk against fresh shorts.</li>
+</ul>
+<hr>
+<h2>12. Game Plan (Monday, Sep 21 framing — no premarket data until then)</h2>
+<ul class="dots">
+<li>Confirm Fed-speaker tone (Goolsbee Mon AM; Williams/Jefferson/Barkin Tue) — any walk-back of hawkishness reprices duration.</li>
+<li>Tech: SNDK/MU/AVGO — look for hold-above-Friday-breakout; do not chase a gap-up &gt;3% without volume.</li>
+<li>Biotech: RARE/SRRK — watch for approval-day follow-through vs. sell-the-news; IONS into Sep 22 PDUFA.</li>
+<li>Banks: RF upgrade follow-through; avoid catching the falling knife in BAC until the 5-day downtrend stabilizes.</li>
+<li>Shorts: XENE continuation, PANW/NFLX downgrade follow-through, NUE guidance digestion.</li>
+<li>IMCC: watch-only; no new position given LULD/dilution risk and the user's prior loss on the name.</li>
+<li>Macro risk: jobless claims Thu, durable goods + Michigan sentiment Fri; PMIs Wed.</li>
+</ul>
+<hr>
+<h2>13. Illustrative Allocation (research only, not advice)</h2>
+<div class="tblwrap"><table class="md-table sortable"><thead><tr><th>Sleeve</th><th>Weight</th><th>Rationale</th></tr></thead><tbody>
+<tr><td>Energy / banks quality</td><td>25%</td><td>Regime-favored: hawkish, $100 oil, +25 bps 2s10s</td></tr>
+<tr><td>AI-capex tech (AVGO/MU/SNDK)</td><td>20%</td><td>Verified momentum + earnings visibility</td></tr>
+<tr><td>Healthcare catalysts</td><td>15%</td><td>Best 5-day sector; FDA de-risking</td></tr>
+<tr><td>Cash / T-bills</td><td>20%</td><td>5% front-end yields; optionality for FOMC repricing</td></tr>
+<tr><td>Tactical crypto-equity momentum</td><td>5%</td><td>High-risk satellite only</td></tr>
+<tr><td>Downgrade-driven shorts (hedge)</td><td>10%</td><td>XENE/NUE/PANW/NFLX-type setups</td></tr>
+<tr><td>Speculative / watch-only</td><td>5%</td><td>IMCC-class names: observe, don't allocate</td></tr>
+</tbody></table></div>
+<hr>
+<h2>14. Scorecard</h2>
+<p><strong>Skipped — first report in the series; no prior picks to grade.</strong> Calibration lessons begin with Monday's edition.</p>
+<hr>
+<h2>15. Data Gaps &amp; Caveats</h2>
+<ul class="dots">
+<li>Premarket/after-hours quotes: <strong>unavailable</strong> (markets closed Saturday).</li>
+<li>Exact Nasdaq-100 Friday close: <strong>unavailable</strong>.</li>
+<li>Several Friday final prints (SNDK, MU, AVGO, HOOD, MSTR, NFLX, PANW, NUE closes): <strong>unavailable</strong> — only verified % moves shown.</li>
+<li>Sector 5-day ranking: only 4 of 11 sectors verifiable; constituent 5-day data for energy/utilities top/worst stocks: <strong>unavailable</strong>.</li>
+<li>VIX exact level: sources conflict (14.88/15.44/15.50).</li>
+<li>Gold: $4,325–$4,418 range across timestamps — unresolved conflict.</li>
+<li>ETH late-Friday print ($2,611.15, +6.74%) conflicts with earlier snapshot — timestamp mix.</li>
+<li>Short interest, borrow cost, FTDs, off-exchange %, SSR, days-to-cover: <strong>unavailable</strong> for all names except qualitative notes.</li>
+<li>Polymarket full top-20 financial/economic boards: <strong>unavailable</strong> beyond the Fed-path markets listed.</li>
+<li>Support/resistance levels: <strong>unavailable</strong> except where Friday ranges were verified (IMCC, SRRK 52-week anchors, MARA).</li>
+<li>Sample/layout disclaimer: any September 19 site content is not tradeable research; this report supersedes only after fresh verification Monday.</li>
+</ul>
+<hr>
+<blockquote><strong>⚠️ Research only — not financial advice.</strong> Verify all figures before acting. Markets reopen Monday, September 21, 2026; premarket data, Fed speakers, and fresh catalysts may invalidate these setups.</blockquote>
+<section class="gen rv" id="archive">
+<div class="plate"><span class="pnum">§</span><h2>Archive</h2></div>
+<p class="dim"><a href="reports/2026-09-19.html">2026-09-19</a> · <a href="reports/2026-09-18.html">2026-09-18</a></p>
+</section>
+<div class="disclaimer" style="margin-top:34px">RESEARCH ONLY — NOT FINANCIAL ADVICE. Scores are heuristic, not calibrated predictions. Verify all prices and headlines before trading. Past performance does not predict future results.</div>
+</main>
+<footer><div class="cols">
+<span>◈ MORNING MOMENTUM WATCHLIST</span>
+<span>DATA: YAHOO FINANCE (DELAYED) · WEB RESEARCH</span>
+<span>RESEARCH ONLY — NOT FINANCIAL ADVICE</span>
+</div></footer>
+</div>
+<script>window.MKT={"^GSPC": {"name": "S&P 500", "price": 7650.5, "prevClose": 7691.76, "chgPct": -0.54, "wk52High": 7816.7, "wk52Low": 6316.91, "currency": "USD", "spark": [7707.97998046875, 7641.16015625, 7674.3701171875, 7652.85986328125, 7677.27978515625, 7675.7001953125, 7730.990234375, 7711.759765625, 7686.14013671875, 7631.47021484375, 7666.60009765625, 7747.7099609375, 7718.60009765625, 7673.52001953125, 7636.35986328125, 7591.7001953125, 7656.97998046875, 7619.97998046875, 7585.72998046875, 7551.81005859375, 7637.759765625, 7650.5], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "^NDX": {"name": "NASDAQ-100", "price": 29644.168, "prevClose": 29490.96, "chgPct": 0.52, "wk52High": 30762.2, "wk52Low": 22841.42, "currency": "USD", "spark": [29426.01953125, 29213.16015625, 29308.859375, 29023.1796875, 29209.23046875, 29224.51953125, 29641.560546875, 29433.4296875, 29456.970703125, 29077.220703125, 29143.330078125, 29482.3203125, 29544.150390625, 29507.69921875, 29421.55078125, 29103.509765625, 29368.439453125, 29127.16015625, 28937.83984375, 28945.060546875, 29446.98046875, 29644.169921875], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "^DJI": {"name": "Dow Jones Industrial Average", "price": 51682.64, "prevClose": 53343.4, "chgPct": -3.11, "wk52High": 54744.33, "wk52Low": 45057.28, "currency": "USD", "spark": [53463.05078125, 52759.2109375, 53277.01171875, 53417.16015625, 53577.3984375, 53463.87890625, 53569.44140625, 53559.98828125, 53185.8984375, 52766.87890625, 53061.94921875, 53686.109375, 53414.25, 52786.0703125, 52380.66015625, 52064.1015625, 52573.2890625, 52421.19921875, 52093.109375, 51461.8984375, 51778.0390625, 51682.640625], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "^RUT": {"name": " Russell 2000 Index", "price": 2860.3965, "prevClose": 3017.89, "chgPct": -5.22, "wk52High": 3069.71, "wk52Low": 2303.46, "currency": "USD", "spark": [3032.93994140625, 2992.429931640625, 3017.8701171875, 2995.080078125, 3010.02001953125, 3005.89990234375, 3014.340087890625, 2972.3701171875, 2956.449951171875, 2920.1298828125, 2953.169921875, 2968.27001953125, 2975.64990234375, 2960.199951171875, 2921.239990234375, 2890.949951171875, 2903.93994140625, 2892.239990234375, 2870.2900390625, 2858.81005859375, 2874.6298828125, 2860.39990234375], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "^VIX": {"name": "CBOE Volatility Index", "price": 14.81, "prevClose": 15.84, "chgPct": -6.5, "wk52High": 35.3, "wk52Low": 13.38, "currency": "USD", "spark": [15.84000015258789, 14.890000343322754, 16.010000228881836, 15.130000114440918, 15.850000381469727, 15.449999809265137, 15.210000038146973, 14.510000228881836, 14.430000305175781, 14.920000076293945, 16.34000015258789, 15.199999809265137, 14.319999694824219, 14.529999732971191, 15.300000190734863, 15.720000267028809, 16.459999084472656, 17.84000015258789, 15.84000015258789, 17.100000381469727, 17.200000762939453, 17.709999084472656, 15.4399995803833, 14.8100004196167], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "DX-Y.NYB": {"name": "US Dollar Index", "price": 100.215, "prevClose": 99.65, "chgPct": 0.57, "wk52High": 101.8, "wk52Low": 95.55, "currency": "USD", "spark": [98.83000183105469, 98.9000015258789, 98.80000305175781, 99.0, 98.91999816894531, 99.16999816894531, 99.16000366210938, 99.69999694824219, 99.43000030517578, 99.66999816894531, 99.55999755859375, 99.0, 99.16000366210938, 98.83999633789062, 98.7699966430664, 99.08999633789062, 99.12000274658203, 99.45999908447266, 99.6500015258789, 100.30999755859375, 100.22000122070312, 100.22000122070312], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "GC=F": {"name": "Gold Dec 26", "price": 4415.9, "prevClose": 4420.6, "chgPct": -0.11, "wk52High": 5586.2, "wk52Low": 3718.1, "currency": "USD", "spark": [4545.2998046875, 4571.39990234375, 4680.60009765625, 4697.7998046875, 4694.5, 4653.2998046875, 4664.0, 4529.89990234375, 4481.5, 4396.39990234375, 4414.60009765625, 4539.89990234375, 4476.60009765625, 4439.0, 4460.7001953125, 4407.2998046875, 4408.89990234375, 4351.89990234375, 4332.7998046875, 4387.5, 4399.7001953125, 4424.89990234375], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "SI=F": {"name": "Silver Dec 26", "price": 66.785, "prevClose": 63.941, "chgPct": 4.45, "wk52High": 121.3, "wk52Low": 43.3, "currency": "USD", "spark": [65.73400115966797, 68.0260009765625, 69.46600341796875, 68.54100036621094, 68.63600158691406, 67.98999786376953, 69.42900085449219, 66.99500274658203, 66.22100067138672, 64.61799621582031, 64.7229995727539, 66.9729995727539, 66.0469970703125, 66.2969970703125, 67.94200134277344, 64.28399658203125, 64.55400085449219, 63.51300048828125, 63.236000061035156, 64.28800201416016, 65.47000122070312, 66.55599975585938], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "CL=F": {"name": "Crude Oil Oct 26", "price": 95.47, "prevClose": 84.94, "chgPct": 12.4, "wk52High": 119.48, "wk52Low": 54.98, "currency": "USD", "spark": [85.83000183105469, 87.83000183105469, 87.05999755859375, 85.01000213623047, 82.36000061035156, 82.2300033569336, 83.52999877929688, 83.4000015258789, 85.76000213623047, 90.22000122070312, 91.01000213623047, 91.30000305175781, 91.4800033569336, 93.02999877929688, 96.05000305175781, 102.4800033569336, 100.05000305175781, 101.38999938964844, 105.83000183105469, 102.43000030517578, 101.91000366210938, 100.30000305175781], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "BZ=F": {"name": "Brent Crude Oil Last Day Financial Futures", "price": 99.29, "prevClose": 91.02, "chgPct": 9.09, "wk52High": 126.1, "wk52Low": 58.72, "currency": "USD", "spark": [91.62000274658203, 93.77999877929688, 94.38999938964844, 92.16999816894531, 88.58000183105469, 87.83999633789062, 89.69999694824219, 89.30999755859375, 90.48999786376953, 94.6500015258789, 95.62999725341797, 95.5199966430664, 96.27999877929688, 97.91999816894531, 101.20999908447266, 107.62999725341797, 104.61000061035156, 105.68000030517578, 108.75, 105.83000183105469, 104.81999969482422, 103.87000274658203], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "NG=F": {"name": "Natural Gas Oct 26", "price": 2.899, "prevClose": 2.776, "chgPct": 4.43, "wk52High": 7.827, "wk52Low": 2.483, "currency": "USD", "spark": [2.813999891281128, 2.7330000400543213, 2.7730000019073486, 2.7820000648498535, 2.7699999809265137, 2.8420000076293945, 2.9070000648498535, 2.888000011444092, 2.934999942779541, 2.9040000438690186, 2.9560000896453857, 2.9130001068115234, 2.9749999046325684, 2.9159998893737793, 2.822000026702881, 2.8340001106262207, 2.8310000896453857, 2.8959999084472656, 2.9189999103546143, 2.8910000324249268, 2.9010000228881836, 2.9119999408721924], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "HG=F": {"name": "Copper Dec 26", "price": 6.7155, "prevClose": 6.4825, "chgPct": 3.59, "wk52High": 6.8055, "wk52Low": 4.5585, "currency": "USD", "spark": [6.487500190734863, 6.460000038146973, 6.579500198364258, 6.598999977111816, 6.709499835968018, 6.5945000648498535, 6.586999893188477, 6.561999797821045, 6.593500137329102, 6.506499767303467, 6.500999927520752, 6.577000141143799, 6.5970001220703125, 6.738999843597412, 6.803500175476074, 6.4670000076293945, 6.4695000648498535, 6.329999923706055, 6.368500232696533, 6.43149995803833, 6.58650016784668, 6.614999771118164], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "BTC-USD": {"name": "Bitcoin USD", "price": 81151.04, "prevClose": 69266.19, "chgPct": 17.16, "wk52High": 126198.07, "wk52Low": 57747.766, "currency": "USD", "spark": [69266.1875, 73032.7578125, 78335.1875, 77083.4140625, 77755.265625, 78964.484375, 78564.9765625, 79027.421875, 80257.5390625, 77830.2890625, 78245.8125, 77667.5703125, 78548.6328125, 77403.625, 77300.4765625, 81271.7421875, 79671.96875, 79823.8671875, 80350.046875, 79115.8515625, 78438.578125, 78259.5234375, 76568.125, 77173.796875, 77270.46875, 76838.15625, 78163.3828125, 75612.5078125, 76150.3203125, 76403.7734375, 81151.0390625], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "ETH-USD": {"name": "Ethereum USD", "price": 2623.31, "prevClose": 2251.458, "chgPct": 16.52, "wk52High": 4755.22, "wk52Low": 1506.5057, "currency": "USD", "spark": [2251.4580078125, 2326.384765625, 2515.28173828125, 2424.251220703125, 2463.81591796875, 2481.831298828125, 2443.159423828125, 2506.260986328125, 2510.41015625, 2442.535888671875, 2457.686279296875, 2417.938720703125, 2466.8203125, 2417.842041015625, 2391.5009765625, 2508.020751953125, 2456.078125, 2480.735595703125, 2514.548828125, 2490.9580078125, 2484.94140625, 2466.913818359375, 2437.0986328125, 2514.73388671875, 2525.944580078125, 2477.020751953125, 2514.406982421875, 2399.0869140625, 2416.119873046875, 2447.106689453125, 2623.31005859375], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "^TNX": {"name": "CBOE Interest Rate 10 Year T No", "price": 4.998, "prevClose": 4.706, "chgPct": 6.2, "wk52High": 5.016, "wk52Low": 3.947, "currency": "USD", "spark": [4.705999851226807, 4.6529998779296875, 4.696000099182129, 4.73799991607666, 4.703999996185303, 4.638999938964844, 4.664000034332275, 4.671999931335449, 4.71999979019165, 4.757999897003174, 4.796000003814697, 4.796000003814697, 4.76200008392334, 4.783999919891357, 4.806000232696533, 4.836999893188477, 4.943999767303467, 4.974999904632568, 4.960999965667725, 4.995999813079834, 5.00600004196167, 4.947000026702881, 4.998000144958496], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XLK": {"name": "State Street Technology Select Sector SPDR ETF", "price": 189.6, "prevClose": 185.62, "chgPct": 2.14, "wk52High": 198.73, "wk52Low": 126.68, "currency": "USD", "spark": [183.63999938964844, 183.10000610351562, 183.30999755859375, 180.0500030517578, 181.74000549316406, 182.83999633789062, 188.61000061035156, 185.69000244140625, 186.5, 183.63999938964844, 183.60000610351562, 185.97000122070312, 187.27999877929688, 187.8699951171875, 187.8699951171875, 185.22000122070312, 187.6699981689453, 184.27999877929688, 183.74000549316406, 183.92999267578125, 188.05999755859375, 189.60000610351562], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XLF": {"name": "State Street Financial Select Sector SPDR ETF", "price": 55.86, "prevClose": 57.84, "chgPct": -3.42, "wk52High": 58.6, "wk52Low": 47.67, "currency": "USD", "spark": [57.47999954223633, 56.95000076293945, 57.47999954223633, 58.220001220703125, 58.310001373291016, 58.2599983215332, 57.880001068115234, 58.099998474121094, 57.709999084472656, 57.20000076293945, 57.65999984741211, 58.560001373291016, 58.099998474121094, 57.29999923706055, 57.060001373291016, 56.869998931884766, 57.25, 57.029998779296875, 56.849998474121094, 55.93000030517578, 55.880001068115234, 55.86000061035156], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XLE": {"name": "State Street Energy Select Sector SPDR ETF", "price": 64.31, "prevClose": 63.68, "chgPct": 0.99, "wk52High": 66.17, "wk52Low": 42.35, "currency": "USD", "spark": [63.58000183105469, 63.75, 63.63999938964844, 63.11000061035156, 62.060001373291016, 62.43000030517578, 62.290000915527344, 62.68000030517578, 63.959999084472656, 64.7699966430664, 65.0999984741211, 64.62000274658203, 64.05999755859375, 64.7699966430664, 65.30999755859375, 64.93000030517578, 65.13999938964844, 64.52999877929688, 65.93000030517578, 64.02999877929688, 64.4800033569336, 64.30999755859375], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XLV": {"name": "State Street Health Care Select Sector SPDR ETF", "price": 168.39, "prevClose": 169.73, "chgPct": -0.79, "wk52High": 176.6, "wk52Low": 133.73, "currency": "USD", "spark": [175.67999267578125, 172.38999938964844, 174.6199951171875, 174.6999969482422, 175.2899932861328, 173.5399932861328, 171.5800018310547, 171.16000366210938, 170.5399932861328, 171.6699981689453, 172.9499969482422, 173.25999450683594, 171.4499969482422, 167.1300048828125, 166.5800018310547, 165.66000366210938, 165.36000061035156, 167.75, 167.66000366210938, 167.77000427246094, 168.80999755859375, 168.38999938964844], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XLI": {"name": "State Street Industrial Select Sector SPDR ETF", "price": 169.75, "prevClose": 183.57, "chgPct": -7.53, "wk52High": 188.19, "wk52Low": 147.14, "currency": "USD", "spark": [181.9499969482422, 179.77000427246094, 180.25, 179.0, 178.39999389648438, 180.33999633789062, 178.8000030517578, 177.13999938964844, 175.1300048828125, 172.72999572753906, 172.77999877929688, 174.55999755859375, 175.27000427246094, 174.4199981689453, 171.7899932861328, 170.5500030517578, 172.3699951171875, 169.92999267578125, 168.85000610351562, 168.7100067138672, 169.00999450683594, 169.75], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XLP": {"name": "State Street Consumer Staples Select Sector SPDR ETF", "price": 82.8, "prevClose": 85.58, "chgPct": -3.25, "wk52High": 90.14, "wk52Low": 75.16, "currency": "USD", "spark": [86.54000091552734, 85.31999969482422, 85.98999786376953, 87.44999694824219, 86.5199966430664, 86.2699966430664, 85.08000183105469, 85.44999694824219, 84.9800033569336, 85.25, 85.52999877929688, 85.26000213623047, 84.58000183105469, 84.0199966430664, 83.05000305175781, 83.08999633789062, 83.37999725341797, 84.41999816894531, 83.7300033569336, 83.33000183105469, 83.48999786376953, 82.80000305175781], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XLU": {"name": "State Street Utilities Select Sector SPDR ETF", "price": 41.1, "prevClose": 44.02, "chgPct": -6.63, "wk52High": 47.8, "wk52Low": 41.08, "currency": "USD", "spark": [44.02000045776367, 43.77000045776367, 42.77000045776367, 43.220001220703125, 43.310001373291016, 43.5099983215332, 43.18000030517578, 42.72999954223633, 42.22999954223633, 42.560001373291016, 42.66999816894531, 43.029998779296875, 43.08000183105469, 43.45000076293945, 42.939998626708984, 42.52000045776367, 42.38999938964844, 41.81999969482422, 41.31999969482422, 41.31999969482422, 41.689998626708984, 41.099998474121094], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XLY": {"name": "State Street Consumer Discretionary Select Sector SPDR ETF", "price": 111.03, "prevClose": 116.36, "chgPct": -4.58, "wk52High": 125.01, "wk52Low": 105.19, "currency": "USD", "spark": [118.58999633789062, 116.68000030517578, 118.0199966430664, 118.30000305175781, 117.94999694824219, 117.16000366210938, 115.87999725341797, 117.20999908447266, 116.58999633789062, 114.58999633789062, 114.86000061035156, 116.45999908447266, 114.91000366210938, 113.98999786376953, 112.45999908447266, 111.95999908447266, 112.95999908447266, 112.8499984741211, 110.87999725341797, 110.18000030517578, 111.38999938964844, 111.02999877929688], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XLB": {"name": "State Street Materials Select Sector SPDR ETF", "price": 49.99, "prevClose": 51.78, "chgPct": -3.46, "wk52High": 54.19, "wk52Low": 42.035, "currency": "USD", "spark": [52.52000045776367, 52.41999816894531, 53.540000915527344, 53.58000183105469, 53.58000183105469, 53.66999816894531, 53.22999954223633, 53.18000030517578, 52.689998626708984, 52.06999969482422, 52.95000076293945, 52.619998931884766, 52.439998626708984, 51.939998626708984, 51.38999938964844, 50.7599983215332, 50.95000076293945, 50.4900016784668, 50.72999954223633, 50.36000061035156, 50.709999084472656, 49.9900016784668], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XLRE": {"name": "State Street Real Estate Select Sector SPDR ETF", "price": 42.53, "prevClose": 44.63, "chgPct": -4.71, "wk52High": 46.455, "wk52Low": 39.725, "currency": "USD", "spark": [44.9900016784668, 45.08000183105469, 45.08000183105469, 45.33000183105469, 45.36000061035156, 45.09000015258789, 44.65999984741211, 44.47999954223633, 44.11000061035156, 44.040000915527344, 43.72999954223633, 44.25, 43.93000030517578, 43.900001525878906, 43.40999984741211, 43.04999923706055, 43.41999816894531, 43.119998931884766, 43.06999969482422, 42.810001373291016, 42.939998626708984, 42.529998779296875], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XLC": {"name": "State Street Communication Services Select Sector SPDR ETF", "price": 110.81, "prevClose": 110.48, "chgPct": 0.3, "wk52High": 120.405, "wk52Low": 105.03, "currency": "USD", "spark": [111.31999969482422, 110.68000030517578, 111.4000015258789, 112.31999969482422, 113.18000030517578, 112.61000061035156, 111.41000366210938, 112.98999786376953, 111.45999908447266, 110.87999725341797, 112.41999816894531, 113.37999725341797, 112.02999877929688, 111.5199966430664, 110.83000183105469, 111.5, 112.5999984741211, 115.06999969482422, 114.02999877929688, 113.0, 112.3499984741211, 110.80999755859375], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "SNDK": {"name": "Sandisk Corporation", "price": 1791.82, "prevClose": 1625.78, "chgPct": 10.21, "wk52High": 2354.39, "wk52Low": 93.535, "currency": "USD", "spark": [1568.8699951171875, 1600.6199951171875, 1596.0799560546875, 1493.1199951171875, 1480.77001953125, 1499.3699951171875, 1484.949951171875, 1484.97998046875, 1566.699951171875, 1536.8699951171875, 1553.4000244140625, 1554.989990234375, 1740.0, 1737.989990234375, 1764.1700439453125, 1692.5899658203125, 1633.3499755859375, 1551.989990234375, 1530.89501953125, 1519.969970703125, 1614.3900146484375, 1791.8199462890625], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "MU": {"name": "Micron Technology, Inc.", "price": 1015.8, "prevClose": 940.76, "chgPct": 7.98, "wk52High": 1255.0, "wk52Low": 154.65, "currency": "USD", "spark": [937.1099853515625, 974.3300170898438, 966.780029296875, 910.4299926757812, 932.969970703125, 938.4000244140625, 935.3900146484375, 932.8599853515625, 958.72998046875, 933.4400024414062, 956.0800170898438, 958.1599731445312, 1016.5900268554688, 1000.260009765625, 1027.77001953125, 977.4099731445312, 975.260009765625, 924.030029296875, 927.5999755859375, 926.5499877929688, 977.5, 1015.7999877929688], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "RARE": {"name": "Ultragenyx Pharmaceutical Inc.", "price": 14.51, "prevClose": 25.49, "chgPct": -43.08, "wk52High": 39.89, "wk52Low": 12.73, "currency": "USD", "spark": [26.239999771118164, 25.31999969482422, 25.829999923706055, 25.719999313354492, 26.459999084472656, 26.440000534057617, 26.260000228881836, 25.610000610351562, 25.209999084472656, 25.809999465942383, 26.530000686645508, 14.850000381469727, 15.300000190734863, 14.880000114440918, 14.3100004196167, 14.399999618530273, 14.300000190734863, 13.609999656677246, 13.069999694824219, 12.880000114440918, 14.5, 14.510000228881836], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "SRRK": {"name": "Scholar Rock Holding Corporation", "price": 46.65, "prevClose": 54.72, "chgPct": -14.75, "wk52High": 61.76, "wk52Low": 27.07, "currency": "USD", "spark": [56.5099983215332, 55.25, 56.5, 58.20000076293945, 58.25, 60.040000915527344, 59.2599983215332, 57.79999923706055, 56.79999923706055, 55.88999938964844, 56.099998474121094, 55.939998626708984, 55.33000183105469, 57.41999816894531, 54.619998931884766, 55.66999816894531, 55.40999984741211, 51.849998474121094, 50.0, 49.369998931884766, 49.02000045776367, 46.650001525878906], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "AVGO": {"name": "Broadcom Inc.", "price": 357.61, "prevClose": 380.0, "chgPct": -5.89, "wk52High": 495.0, "wk52Low": 289.96, "currency": "USD", "spark": [362.4800109863281, 364.0299987792969, 368.45001220703125, 358.760009765625, 356.739990234375, 355.5899963378906, 371.5400085449219, 368.7900085449219, 370.3399963378906, 369.67999267578125, 367.239990234375, 357.1600036621094, 357.8999938964844, 368.55999755859375, 364.3800048828125, 360.8299865722656, 361.989990234375, 344.7200012207031, 339.2699890136719, 339.510009765625, 347.29998779296875, 357.6099853515625], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "MSTR": {"name": "Strategy Inc", "price": 153.92, "prevClose": 92.52, "chgPct": 66.36, "wk52High": 365.21, "wk52Low": 81.81, "currency": "USD", "spark": [104.25, 112.38999938964844, 119.25, 122.62999725341797, 126.83000183105469, 123.19000244140625, 137.39999389648438, 127.30999755859375, 132.94000244140625, 124.87999725341797, 123.19000244140625, 144.82000732421875, 142.8000030517578, 136.52000427246094, 132.6999969482422, 128.55999755859375, 130.97000122070312, 136.94000244140625, 129.60000610351562, 126.18000030517578, 132.25, 153.9199981689453], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "MARA": {"name": "MARA Holdings, Inc.", "price": 13.24, "prevClose": 8.96, "chgPct": 47.77, "wk52High": 23.45, "wk52Low": 6.66, "currency": "USD", "spark": [9.649999618530273, 11.149999618530273, 11.260000228881836, 11.180000305175781, 11.829999923706055, 11.220000267028809, 11.869999885559082, 10.670000076293945, 10.770000457763672, 10.229999542236328, 10.470000267028809, 11.600000381469727, 11.3100004196167, 11.829999923706055, 11.920000076293945, 11.430000305175781, 11.979999542236328, 11.5, 11.239999771118164, 11.039999961853027, 11.640000343322754, 13.239999771118164], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "HOOD": {"name": "Robinhood Markets, Inc.", "price": 119.82, "prevClose": 91.53, "chgPct": 30.91, "wk52High": 153.86, "wk52Low": 63.515, "currency": "USD", "spark": [95.7699966430664, 95.0999984741211, 108.12999725341797, 103.62000274658203, 112.08999633789062, 108.54000091552734, 109.76000213623047, 104.26000213623047, 104.80999755859375, 103.51000213623047, 106.98999786376953, 124.72000122070312, 122.11000061035156, 117.33999633789062, 115.27999877929688, 113.33000183105469, 112.56999969482422, 114.33000183105469, 110.44999694824219, 104.41999816894531, 109.80999755859375, 119.81999969482422], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "MRNA": {"name": "Moderna, Inc.", "price": 154.04, "prevClose": 62.96, "chgPct": 144.66, "wk52High": 176.66, "wk52Low": 22.28, "currency": "USD", "spark": [174.3800048828125, 133.32000732421875, 145.1300048828125, 138.88999938964844, 158.8300018310547, 149.66000366210938, 142.77000427246094, 137.99000549316406, 140.33999633789062, 154.27000427246094, 150.80999755859375, 148.8699951171875, 145.5500030517578, 140.3300018310547, 135.61000061035156, 136.6199951171875, 143.97000122070312, 146.69000244140625, 143.77000427246094, 145.6199951171875, 158.07000732421875, 154.0399932861328], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "ONON": {"name": "On Holding AG", "price": 27.26, "prevClose": 31.03, "chgPct": -12.15, "wk52High": 51.08, "wk52Low": 26.365, "currency": "USD", "spark": [31.260000228881836, 29.899999618530273, 30.020000457763672, 29.510000228881836, 28.829999923706055, 29.229999542236328, 28.950000762939453, 28.850000381469727, 28.5, 27.729999542236328, 27.799999237060547, 28.360000610351562, 27.989999771118164, 27.270000457763672, 26.84000015258789, 26.850000381469727, 27.40999984741211, 27.469999313354492, 26.760000228881836, 27.149999618530273, 27.329999923706055, 27.260000228881836], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "XENE": {"name": "Xenon Pharmaceuticals Inc.", "price": 39.75, "prevClose": 63.18, "chgPct": -37.08, "wk52High": 72.66, "wk52Low": 35.97, "currency": "USD", "spark": [62.31999969482422, 59.72999954223633, 60.77000045776367, 60.560001373291016, 60.41999816894531, 63.790000915527344, 61.93000030517578, 59.9900016784668, 60.220001220703125, 60.0, 60.15999984741211, 60.400001525878906, 59.75, 59.54999923706055, 58.97999954223633, 58.79999923706055, 58.650001525878906, 58.189998626708984, 56.279998779296875, 56.7599983215332, 57.349998474121094, 39.75], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "IMCC": {"name": "IM Cannabis Corp.", "price": 4.23, "prevClose": 3.15, "chgPct": 34.29, "wk52High": 77.1, "wk52Low": 1.55, "currency": "USD", "spark": [3.180000066757202, 3.4200000762939453, 3.390000104904175, 3.299999952316284, 3.2699999809265137, 3.3299999237060547, 3.940000057220459, 3.4100000858306885, 3.059999942779541, 2.890000104904175, 3.0, 2.200000047683716, 1.9800000190734863, 1.9600000381469727, 1.9900000095367432, 1.75, 1.75, 1.7200000286102295, 1.6299999952316284, 1.6299999952316284, 1.7400000095367432, 4.230000019073486], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "NFLX": {"name": "Netflix, Inc.", "price": 71.79, "prevClose": 77.77, "chgPct": -7.69, "wk52High": 124.86, "wk52Low": 65.08, "currency": "USD", "spark": [80.22000122070312, 80.13999938964844, 79.58999633789062, 80.01000213623047, 82.2300033569336, 81.45999908447266, 79.83999633789062, 81.72000122070312, 81.05000305175781, 80.80999755859375, 82.7300033569336, 82.66999816894531, 78.25, 76.7699966430664, 76.02999877929688, 76.01000213623047, 77.4000015258789, 80.31999969482422, 77.9000015258789, 76.41000366210938, 75.30999755859375, 71.79000091552734], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "PANW": {"name": "Palo Alto Networks, Inc.", "price": 363.58, "prevClose": 374.14, "chgPct": -2.82, "wk52High": 398.88, "wk52Low": 139.57, "currency": "USD", "spark": [359.760009765625, 349.55999755859375, 357.8699951171875, 350.8999938964844, 339.8999938964844, 339.30999755859375, 382.8500061035156, 371.5899963378906, 382.1300048828125, 362.0899963378906, 328.4800109863281, 331.94000244140625, 333.260009765625, 336.9800109863281, 335.1000061035156, 338.489990234375, 330.6499938964844, 373.94000244140625, 375.0899963378906, 375.6499938964844, 375.05999755859375, 363.5799865722656], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "NUE": {"name": "Nucor Corporation", "price": 248.38, "prevClose": 264.19, "chgPct": -5.98, "wk52High": 280.11, "wk52Low": 131.32, "currency": "USD", "spark": [248.74000549316406, 240.47999572753906, 243.6300048828125, 244.63999938964844, 247.5500030517578, 252.8000030517578, 252.3699951171875, 250.5, 249.63999938964844, 251.9199981689453, 263.9700012207031, 262.4700012207031, 261.07000732421875, 256.3999938964844, 257.9100036621094, 255.4600067138672, 259.42999267578125, 254.6300048828125, 258.82000732421875, 260.67999267578125, 265.1400146484375, 248.3800048828125], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "NKE": {"name": "NIKE, Inc.", "price": 35.51, "prevClose": 40.06, "chgPct": -11.36, "wk52High": 76.97, "wk52Low": 35.5, "currency": "USD", "spark": [41.04999923706055, 40.209999084472656, 40.7599983215332, 40.75, 39.47999954223633, 38.59000015258789, 38.439998626708984, 39.599998474121094, 39.060001373291016, 38.119998931884766, 38.2400016784668, 38.77000045776367, 38.400001525878906, 38.099998474121094, 37.349998474121094, 36.619998931884766, 36.79999923706055, 37.04999923706055, 36.220001220703125, 35.779998779296875, 36.36000061035156, 35.5099983215332], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "ACN": {"name": "Accenture plc", "price": 181.29, "prevClose": 172.93, "chgPct": 4.83, "wk52High": 291.09, "wk52Low": 118.15, "currency": "USD", "spark": [183.1699981689453, 181.35000610351562, 185.27999877929688, 186.52999877929688, 186.92999267578125, 181.3800048828125, 187.3800048828125, 189.61000061035156, 189.75999450683594, 188.08999633789062, 187.67999267578125, 193.1199951171875, 186.72000122070312, 179.02999877929688, 175.8000030517578, 177.91000366210938, 183.89999389648438, 195.0, 193.39999389648438, 189.63999938964844, 190.2899932861328, 181.2899932861328], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "MGA": {"name": "Magna International Inc.", "price": 63.15, "prevClose": 70.27, "chgPct": -10.13, "wk52High": 73.22, "wk52Low": 43.11, "currency": "USD", "spark": [71.01000213623047, 70.38999938964844, 73.05000305175781, 67.80000305175781, 66.12999725341797, 66.0, 65.70999908447266, 65.86000061035156, 65.56999969482422, 63.630001068115234, 65.77999877929688, 67.08999633789062, 68.87000274658203, 66.55999755859375, 65.47000122070312, 65.13999938964844, 66.12999725341797, 64.88999938964844, 63.41999816894531, 63.7400016784668, 64.81999969482422, 63.150001525878906], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "FLNC": {"name": "Fluence Energy, Inc.", "price": 7.32, "prevClose": 11.75, "chgPct": -37.7, "wk52High": 33.51, "wk52Low": 7.01, "currency": "USD", "spark": [12.069999694824219, 11.390000343322754, 11.34000015258789, 10.859999656677246, 11.239999771118164, 11.079999923706055, 11.430000305175781, 10.880000114440918, 10.8100004196167, 10.420000076293945, 10.5600004196167, 10.199999809265137, 10.350000381469727, 11.039999961853027, 10.119999885559082, 9.6899995803833, 9.930000305175781, 9.40999984741211, 9.300000190734863, 9.050000190734863, 7.659999847412109, 7.320000171661377], "asOf": "2026-09-19T04:21:42.751575+00:00"}, "ORANY": {"name": "Orange S.A.", "price": 17.24, "prevClose": 18.77, "chgPct": -8.15, "wk52High": 21.85, "wk52Low": 15.36, "currency": "USD", "spark": [18.8799991607666, 18.860000610351562, 18.690000534057617, 18.56999969482422, 18.65999984741211, 18.329999923706055, 17.5, 17.6200008392334, 17.850000381469727, 17.93000030517578, 17.950000762939453, 17.8799991607666, 17.799999237060547, 17.84000015258789, 17.690000534057617, 18.0, 18.040000915527344, 18.209999084472656, 18.219999313354492, 18.18000030517578, 18.290000915527344, 17.239999771118164], "asOf": "2026-09-19T04:21:42.751575+00:00"}};</script>
+<script>
+window.addEventListener('DOMContentLoaded',()=>{
+ const layers=[...document.querySelectorAll('[data-plx]')];
+ let tick=false;
+ addEventListener('scroll',()=>{if(tick)return;tick=true;
+  requestAnimationFrame(()=>{const y=scrollY;layers.forEach(l=>{l.style.translate=`0 ${y*parseFloat(l.dataset.plx)}px`});tick=false})},
+  {passive:true});
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.04});
+ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+ document.querySelectorAll('table.sortable').forEach(t=>{
+  const ths=[...t.querySelectorAll('thead th')];
+  ths.forEach((th,idx)=>{th.addEventListener('click',()=>{
+   const tb=t.querySelector('tbody'),rows=[...tb.rows];
+   const dir=th.dataset.dir==='asc'?'desc':'asc';
+   ths.forEach(h=>{h.dataset.dir='';const a=h.querySelector('.arr');if(a)a.remove()});
+   th.dataset.dir=dir;
+   th.insertAdjacentHTML('beforeend',`<span class="arr">${dir==='asc'?' ▲':' ▼'}</span>`);
+   const num=r=>{const x=r.cells[idx].innerText.replace(/[$,%▲▼\s,]/g,'').replace(/[—–-]/g,'');
+     const v=parseFloat(x);return isNaN(v)?r.cells[idx].innerText.toLowerCase():v};
+   rows.sort((a,b)=>{const x=num(a),y=num(b);
+    const c=(typeof x==='number'&&typeof y==='number')?x-y:String(x).localeCompare(String(y));
+    return dir==='asc'?c:-c});
+   rows.forEach(r=>tb.appendChild(r));
+  })});
+ });
+ const D=window.MKT||{};
+ document.querySelectorAll('svg.sparkline').forEach(svg=>{
+  const d=D[svg.dataset.sym];if(!d||!d.spark||d.spark.length<3)return;
+  const s=d.spark,W=120,H=36,P=3;
+  const mn=Math.min(...s),mx=Math.max(...s),rg=(mx-mn)||1;
+  const X=i=>(P+i*(W-2*P)/(s.length-1)).toFixed(1),Y=v=>(H-P-(v-mn)/rg*(H-2*P)).toFixed(1);
+  const pts=s.map((v,i)=>`${X(i)},${Y(v)}`).join(' ');
+  const up=s[s.length-1]>=s[0],col=up?'#57d977':'#f0564f';
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  svg.innerHTML=`<polyline points="${pts}" fill="none" stroke="${col}" stroke-width="1.6"/>`+
+   `<circle cx="${X(s.length-1)}" cy="${Y(s[s.length-1])}" r="2.4" fill="${col}"/>`;
+ });
+});
+</script>
+</body></html>
