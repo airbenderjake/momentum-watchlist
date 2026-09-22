@@ -1,5 +1,33 @@
 [
   {
+    "date": "2026-09-22",
+    "title": "Report 2026-09-22",
+    "url": "reports/2026-09-22.html",
+    "tickers": [
+      "AMD",
+      "ARM",
+      "MU",
+      "INTC",
+      "INSM",
+      "COIN",
+      "MSTR",
+      "WBD",
+      "QCOM",
+      "VKTX",
+      "GPCR",
+      "NVO",
+      "THO",
+      "FLNC",
+      "CRWV",
+      "NFLX",
+      "NBIS",
+      "XOM",
+      "PANW",
+      "NUE",
+      "XENE"
+    ]
+  },
+  {
     "date": "2026-09-21",
     "title": "Report 2026-09-21",
     "url": "reports/2026-09-21.html",
