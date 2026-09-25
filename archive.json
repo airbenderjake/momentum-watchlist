@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-09-25",
+    "title": "Report 2026-09-25",
+    "url": "reports/2026-09-25.html",
+    "tickers": [
+      "AMD",
+      "IONQ",
+      "META",
+      "MU",
+      "AKAM",
+      "WBD",
+      "CBRL",
+      "GDDY",
+      "NVO",
+      "NFLX",
+      "VKTX",
+      "ARM",
+      "GEN",
+      "FLNC",
+      "KBH",
+      "SNDK",
+      "ORCL",
+      "XENE",
+      "QCOM"
+    ]
+  },
+  {
     "date": "2026-09-24",
     "title": "Report 2026-09-24",
     "url": "reports/2026-09-24.html",
