@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-10-07",
+    "title": "Report 2026-10-07",
+    "url": "reports/2026-10-07.html",
+    "tickers": [
+      "NVDA",
+      "MRVL",
+      "AMD",
+      "CEG",
+      "CAT",
+      "PTC",
+      "DKNG",
+      "HOOD",
+      "INTC",
+      "NKE",
+      "MU",
+      "TSLA",
+      "VKTX",
+      "PCVX",
+      "TWLO",
+      "QCOM",
+      "AMAT",
+      "STZ",
+      "NVAX"
+    ]
+  },
+  {
     "date": "2026-10-06",
     "title": "Report 2026-10-06",
     "url": "reports/2026-10-06.html",
