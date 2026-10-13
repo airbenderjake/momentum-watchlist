@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-10-13",
+    "title": "Report 2026-10-13",
+    "url": "reports/2026-10-13.html",
+    "tickers": [
+      "CVX",
+      "GS",
+      "BIIB",
+      "AMZN",
+      "FSLR",
+      "UNH",
+      "CRM",
+      "TSM",
+      "PLTR",
+      "ASML",
+      "MU",
+      "ADBE",
+      "IONQ",
+      "JNJ",
+      "AMD",
+      "INTC",
+      "ORCL",
+      "ARGX",
+      "AVGO",
+      "DKNG"
+    ]
+  },
+  {
     "date": "2026-10-12",
     "title": "Report 2026-10-12",
     "url": "reports/2026-10-12.html",
