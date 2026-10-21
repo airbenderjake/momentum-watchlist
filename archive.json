@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-10-21",
+    "title": "Report 2026-10-21",
+    "url": "reports/2026-10-21.html",
+    "tickers": [
+      "TSLA",
+      "SMCI",
+      "NVDA",
+      "META",
+      "MU",
+      "TSM",
+      "GME",
+      "PLTR",
+      "AMD",
+      "INTC",
+      "NFLX",
+      "DKNG",
+      "CEG",
+      "ISRG",
+      "RCAT",
+      "VKTX",
+      "COIN",
+      "QCOM",
+      "NKE",
+      "MSTR"
+    ]
+  },
+  {
     "date": "2026-10-20",
     "title": "Report 2026-10-20",
     "url": "reports/2026-10-20.html",
