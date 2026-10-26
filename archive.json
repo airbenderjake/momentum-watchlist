@@ -3,7 +3,28 @@
     "date": "2026-10-26",
     "title": "Report 2026-10-26",
     "url": "reports/2026-10-26.html",
-    "tickers": []
+    "tickers": [
+      "LMT",
+      "TSLA",
+      "NVDA",
+      "META",
+      "TSM",
+      "PLTR",
+      "MU",
+      "SPOT",
+      "PG",
+      "VZ",
+      "T",
+      "LRCX",
+      "VKTX",
+      "INTC",
+      "MSTR",
+      "COIN",
+      "WDC",
+      "CRWV",
+      "SMCI",
+      "CLRO"
+    ]
   },
   {
     "date": "2026-10-23",
