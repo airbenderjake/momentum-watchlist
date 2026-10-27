@@ -1,9 +1,30 @@
 [
   {
     "date": "2026-10-27",
-    "title": "Report 2026-10-27",
+    "title": "Morning Momentum Watchlist \u2014 October 27, 2026",
     "url": "reports/2026-10-27.html",
-    "tickers": []
+    "tickers": [
+      "TSLA",
+      "NVDA",
+      "AMD",
+      "MU",
+      "LMT",
+      "PLTR",
+      "MSFT",
+      "TSM",
+      "AMZN",
+      "CLS",
+      "COIN",
+      "VZ",
+      "T",
+      "META",
+      "CRWV",
+      "WHR",
+      "VKTX",
+      "PG",
+      "SPOT",
+      "HSBC"
+    ]
   },
   {
     "date": "2026-10-26",
