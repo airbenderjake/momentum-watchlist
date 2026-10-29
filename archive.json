@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-10-29",
+    "title": "Report 2026-10-29",
+    "url": "reports/2026-10-29.html",
+    "tickers": [
+      "LLY",
+      "MSFT",
+      "MU",
+      "CLS",
+      "ORCL",
+      "LITE",
+      "SNDK",
+      "AMD",
+      "DASH",
+      "SHEL",
+      "GOOGL",
+      "FTNT",
+      "NOW",
+      "CAT",
+      "MRVL",
+      "META",
+      "COIN",
+      "PG",
+      "VZ",
+      "VKTX"
+    ]
+  },
+  {
     "date": "2026-10-28",
     "title": "Report 2026-10-28",
     "url": "reports/2026-10-28.html",
