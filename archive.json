@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-06",
+    "title": "Report 2026-11-06",
+    "url": "reports/2026-11-06.html",
+    "tickers": [
+      "IREN",
+      "APP",
+      "NET",
+      "ABNB",
+      "NVDA",
+      "HIMS",
+      "MU",
+      "AMD",
+      "SNDK",
+      "CELH",
+      "AVGO",
+      "QCOM",
+      "MRVL",
+      "ORCL",
+      "INTC",
+      "CRWV",
+      "PLTR",
+      "DKNG",
+      "ARM",
+      "TEAM"
+    ]
+  },
+  {
     "date": "2026-11-05",
     "title": "Report 2026-11-05",
     "url": "reports/2026-11-05.html",
