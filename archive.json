@@ -3,7 +3,28 @@
     "date": "2026-11-10",
     "title": "Report 2026-11-10",
     "url": "reports/2026-11-10.html",
-    "tickers": []
+    "tickers": [
+      "CEG",
+      "AMD",
+      "PDYN",
+      "NET",
+      "TTD",
+      "TSM",
+      "ABNB",
+      "LRCX",
+      "PLTR",
+      "MU",
+      "NVDA",
+      "INTC",
+      "HIMS",
+      "ORCL",
+      "IREN",
+      "AVGO",
+      "DKNG",
+      "XOM",
+      "APLD",
+      "MRVL"
+    ]
   },
   {
     "date": "2026-11-09",
