@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-19",
+    "title": "Report 2026-11-19",
+    "url": "reports/2026-11-19.html",
+    "tickers": [
+      "AVGO",
+      "NVDA",
+      "AMD",
+      "MU",
+      "GME",
+      "TSM",
+      "VKTX",
+      "NKE",
+      "CELH",
+      "PTC",
+      "MSTR",
+      "XOM",
+      "UNH",
+      "CRWV",
+      "RCAT",
+      "ORCL",
+      "INTC",
+      "COIN",
+      "IREN",
+      "PLTR"
+    ]
+  },
+  {
     "date": "2026-11-18",
     "title": "Report 2026-11-18",
     "url": "reports/2026-11-18.html",
