@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-26",
+    "title": "Report 2026-11-26",
+    "url": "reports/2026-11-26.html",
+    "tickers": [
+      "INSM",
+      "PLTR",
+      "CRWD",
+      "ZS",
+      "AAPL",
+      "VKTX",
+      "UNH",
+      "META",
+      "AVGO",
+      "TSLA",
+      "SNDK",
+      "AMD",
+      "AMBA",
+      "GOOGL",
+      "INTU",
+      "NVDA",
+      "MU",
+      "DELL",
+      "MRVL",
+      "ADI"
+    ]
+  },
+  {
     "date": "2026-11-25",
     "title": "Report 2026-11-25",
     "url": "reports/2026-11-25.html",
